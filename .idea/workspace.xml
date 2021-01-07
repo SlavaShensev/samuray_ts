@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Navbar/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Navbar/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Profile/Profile.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/Profile.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610018615392</updated>
-      <workItem from="1610018617054" duration="12543000" />
+      <workItem from="1610018617054" duration="13056000" />
     </task>
     <servers />
   </component>

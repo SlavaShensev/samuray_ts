@@ -1,5 +1,6 @@
 .navbar {
     background: #73d6ff;
+    grid-area: n;
 }
 
 .item {

@@ -1,7 +1,9 @@
 .header {
     background: #00cb00;
+    grid-area: h;
 }
 
 .logo {
     width: 50px;
 }
+
