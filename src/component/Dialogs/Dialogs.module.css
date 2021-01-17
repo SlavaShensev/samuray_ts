@@ -1,0 +1,20 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogs .dialogs_items {
+
+}
+
+.dialogs .items {
+
+}
+
+.messages {
+
+}
+
+.messages .message {
+
+}

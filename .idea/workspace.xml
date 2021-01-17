@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/Music/Music.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/News/News.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Setting/Setting.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +28,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nativ_js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,7 +96,8 @@
       <workItem from="1610710718166" duration="722000" />
       <workItem from="1610712426274" duration="32000" />
       <workItem from="1610742548357" duration="30000" />
-      <workItem from="1610783723197" duration="20606000" />
+      <workItem from="1610783723197" duration="23622000" />
+      <workItem from="1610911320068" duration="2395000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -109,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610789141747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add_active_class">
+      <created>1610879477914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610879477914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add_dialogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_dialogs" />
+    <MESSAGE value="add_active_class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_active_class" />
   </component>
 </project>
