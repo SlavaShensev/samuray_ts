@@ -1,12 +1,12 @@
 import React from 'react';
-import h from './Header.module.css';
+import s from './Header.module.css';
 import logo from '../../static/google.svg';
 
 const Header = () => {
     return (
-        <div className = {h.header}>
+        <div className = {s.header}>
             <a href={'#'}>
-                <img src={logo} className={h.logo}/>
+                <img src={logo} className={s.logo}/>
             </a>
         </div>
     )

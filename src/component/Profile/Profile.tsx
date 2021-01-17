@@ -1,13 +1,13 @@
 import React from 'react';
 import bg from '../../static/bg.png';
-import p from "./Profile.module.css";
+import s from "./Profile.module.css";
 import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
     return (
-        <div className={p.profile}>
+        <div>
             <div>
-                <img src={bg} className={p.bg}/>
+                <img src={bg} className={s.bg}/>
             </div>
             <div>
                 Ava+description

@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/Post/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/Post/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Profile/Profile.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile/Profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +35,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nativ_js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,8 +103,16 @@
       <workItem from="1610710718166" duration="722000" />
       <workItem from="1610712426274" duration="32000" />
       <workItem from="1610742548357" duration="30000" />
-      <workItem from="1610783723197" duration="2796000" />
+      <workItem from="1610783723197" duration="14227000" />
     </task>
+    <task id="LOCAL-00001" summary="add_dialogs">
+      <created>1610789141746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610789141747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add_dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_dialogs" />
   </component>
 </project>
