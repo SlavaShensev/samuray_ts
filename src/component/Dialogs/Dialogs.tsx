@@ -1,30 +1,45 @@
 import React from 'react';
 import s from './Dialogs.module.css';
+import {NavLink} from "react-router-dom";
 
 const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs_items}>
-                <div className={s.items}>
-                    Slava
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/1'}>
+                        Slava
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Sasha
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/2'}>
+                        Sasha
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Elena
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/3'}>
+                        Elena
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Antony
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/4'}>
+                        Antony
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Tom
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/5'}>
+                        Tom
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Olya
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/6'}>
+                        Olya
+                    </NavLink>
                 </div>
-                <div className={s.items}>
-                    Sveta
+                <div className={s.items + ' ' + s.active}>
+                    <NavLink to={'/dialogs/7'}>
+                        Sveta
+                    </NavLink>
                 </div>
             </div>
             <div className={s.messages}>
@@ -32,10 +47,10 @@ const Dialogs = () => {
                     Hello!
                 </div>
                 <div className={s.message}>
-                    Tony! Where are you go?
+                    Slava! Where are you go?
                 </div>
                 <div className={s.message}>
-                    Mom, i love you))
+                    Are you read React?
                 </div>
             </div>
         </div>

@@ -18,6 +18,7 @@
       <list>
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,7 +98,7 @@
       <workItem from="1610712426274" duration="32000" />
       <workItem from="1610742548357" duration="30000" />
       <workItem from="1610783723197" duration="23622000" />
-      <workItem from="1610911320068" duration="2395000" />
+      <workItem from="1610911320068" duration="7270000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
