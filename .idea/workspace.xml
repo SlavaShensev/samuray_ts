@@ -4,7 +4,6 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +31,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
     <property name="ts.external.directory.path" value="E:\Work\Projects\online IT kamasutra\samuray\node_modules\typescript\lib" />
@@ -98,7 +100,9 @@
       <workItem from="1610712426274" duration="32000" />
       <workItem from="1610742548357" duration="30000" />
       <workItem from="1610783723197" duration="23622000" />
-      <workItem from="1610911320068" duration="7270000" />
+      <workItem from="1610911320068" duration="7337000" />
+      <workItem from="1610974787439" duration="2200000" />
+      <workItem from="1610997306718" duration="1490000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -114,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610879477914</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="23-start_Dialogs">
+      <created>1610919331785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610919331785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add_dialogs" />
     <MESSAGE value="add_active_class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_active_class" />
+    <MESSAGE value="23-start_Dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="23-start_Dialogs" />
   </component>
 </project>
