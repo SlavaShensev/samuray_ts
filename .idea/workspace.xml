@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -41,14 +43,15 @@
     <property name="ts.external.directory.path" value="E:\Work\Projects\online IT kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts\Post" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -102,7 +105,7 @@
       <workItem from="1610783723197" duration="23622000" />
       <workItem from="1610911320068" duration="7337000" />
       <workItem from="1610974787439" duration="2200000" />
-      <workItem from="1610997306718" duration="1490000" />
+      <workItem from="1610997306718" duration="3907000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610919331785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring_dialogs_add_component">
+      <created>1610998992808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610998992808</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +158,7 @@
     <MESSAGE value="add_dialogs" />
     <MESSAGE value="add_active_class" />
     <MESSAGE value="23-start_Dialogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="23-start_Dialogs" />
+    <MESSAGE value="refactoring_dialogs_add_component" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring_dialogs_add_component" />
   </component>
 </project>

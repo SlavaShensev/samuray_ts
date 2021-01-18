@@ -2,17 +2,30 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 
-type DialogItemType = {
-    id: number,
+type dialogItemType = {
+    id: string | number,
     name: string,
 }
 
-const DialogItem = (props: DialogItemType) => {
+type message = {
+    message: string
+}
+
+const DialogItem = (props: dialogItemType) => {
+    const path = '/dialogs/' + props.id
     return (
         <div className={s.items + ' ' + s.active}>
-            <NavLink to={'/dialogs/1'}>
-                Slava
+            <NavLink to={path}>
+                {props.name}
             </NavLink>
+        </div>
+    )
+}
+
+const Message = (props: message) => {
+    return (
+        <div>
+            {props.message}
         </div>
     )
 }
@@ -21,48 +34,18 @@ const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs_items}>
-                <DialogItem id={} name={}/>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/2'}>
-                        Sasha
-                    </NavLink>
-                </div>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/3'}>
-                        Elena
-                    </NavLink>
-                </div>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/4'}>
-                        Antony
-                    </NavLink>
-                </div>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/5'}>
-                        Tom
-                    </NavLink>
-                </div>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/6'}>
-                        Olya
-                    </NavLink>
-                </div>
-                <div className={s.items + ' ' + s.active}>
-                    <NavLink to={'/dialogs/7'}>
-                        Sveta
-                    </NavLink>
-                </div>
+                <DialogItem id={1} name={'Slava'}/>
+                <DialogItem id={2} name={'Sasha'}/>
+                <DialogItem id={3} name={'Elena'}/>
+                <DialogItem id={4} name={'Antony'}/>
+                <DialogItem id={5} name={'Tom'}/>
+                <DialogItem id={6} name={'Olya'}/>
+                <DialogItem id={7} name={'Sveta'}/>
             </div>
             <div className={s.messages}>
-                <div className={s.message}>
-                    Hello!
-                </div>
-                <div className={s.message}>
-                    Slava! Where are you go?
-                </div>
-                <div className={s.message}>
-                    Are you read React?
-                </div>
+                <Message message={'Hello!'}/>
+                <Message message={'Slava! Where are you go?'}/>
+                <Message message={'Are you read React?'}/>
             </div>
         </div>
     )
