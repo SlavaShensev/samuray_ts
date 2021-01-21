@@ -1,10 +1,10 @@
 import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
 import './App.css';
 import Header from "./component/Header/Header";
 import Navbar from "./component/Navbar/Navbar";
 import Profile from "./component/Profile/Profile";
 import Dialogs from "./component/Dialogs/Dialogs";
-import {BrowserRouter, Route} from 'react-router-dom';
 import Music from "./component/Music/Music";
 import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";

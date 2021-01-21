@@ -19,6 +19,11 @@ const MyPosts = () => {
             message: 'It is my first post',
             likesCount: 34,
         },
+        {
+            id: 3,
+            message: 'It is my second post',
+            likesCount: 23,
+        },
     ]
     const postsElements = postData.map(p => {
         return (
