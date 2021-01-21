@@ -4,7 +4,7 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,7 @@
       <workItem from="1610974787439" duration="2200000" />
       <workItem from="1610997306718" duration="3961000" />
       <workItem from="1611037286362" duration="1147000" />
-      <workItem from="1611228732115" duration="8081000" />
+      <workItem from="1611228732115" duration="8750000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611239790034</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="25_TS_map_Dialogs">
+      <created>1611241322118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611241322118</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +182,7 @@
     <MESSAGE value="refactoring_dialogs_add_component" />
     <MESSAGE value="add+Post_component" />
     <MESSAGE value="23_TS_Dialogs_and_MyPosts" />
-    <option name="LAST_COMMIT_MESSAGE" value="23_TS_Dialogs_and_MyPosts" />
+    <MESSAGE value="25_TS_map_Dialogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="25_TS_map_Dialogs" />
   </component>
 </project>
