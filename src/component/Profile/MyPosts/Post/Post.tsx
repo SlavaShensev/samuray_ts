@@ -1,8 +1,8 @@
 import React from 'react';
-import { postDataType } from '../MyPosts';
+import {PostType} from '../../../..';
 import p from "./Post.module.css";
-    
-const Post = (props: postDataType) => {
+
+const Post: React.FC<PostType> = (props) => {
     return (
         <div>
             <img className={p.logoPost}
@@ -12,7 +12,7 @@ const Post = (props: postDataType) => {
             {props.message}
             <div>
                 <span>
-                    {props.likesCount}
+                    {props.message}
                 </span>
             </div>
         </div>

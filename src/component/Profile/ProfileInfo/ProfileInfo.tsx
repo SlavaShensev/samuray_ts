@@ -2,7 +2,11 @@ import React from 'react';
 import bg from "../../../static/bg.png";
 import s from "../Profile.module.css";
 
-const ProfileInfo = () => {
+type ProfileInfoType = {
+    title: string
+}
+
+const ProfileInfo: React.FC<ProfileInfoType> = (props) => {
     return (
         <div>
             <div>
