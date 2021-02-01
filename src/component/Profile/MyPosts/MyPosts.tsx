@@ -1,11 +1,10 @@
 import React from 'react';
+import { ProfilePageType } from '../../../redux/state';
 import Post from "./Post/Post";
-import {ProfilePageType} from "../../../index";
 
-const MyPosts: React.FC<ProfilePageType> = (props) => {
+const MyPosts = (props:ProfilePageType) => {
     const postsElements = props.posts
         .map(p => <Post {...p}/>)
-
     return (
         <div>
             My post
