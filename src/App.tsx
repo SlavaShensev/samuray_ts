@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import './App.css';
 import Header from "./component/Header/Header";
 import Navbar from "./component/Navbar/Navbar";
@@ -16,7 +16,7 @@ type PropsType = {
 
 const App = (props: PropsType) => {
     return (
-        <BrowserRouter>
+
             <div className='appWrapper'>
                 <Header/>
                 <Navbar/>
@@ -28,7 +28,6 @@ const App = (props: PropsType) => {
                     <Route path={'/setting'} component={Setting}/>
                 </div>
             </div>
-        </BrowserRouter>
     )
 };
 

@@ -28,7 +28,7 @@ export const state: RootStateType = {
         posts: [
             {id: 1, message: 'Hello'},
             {id: 2, message: 'Slava! Where are you go?'},
-            {id: 3, message: 'Are you read React?'},
+            {id: 3, message: 'Are you reading React?'},
         ]
     },
     dialogsPage: {
@@ -59,7 +59,15 @@ export const state: RootStateType = {
             },
         ],
     },
-    sidebar: {
+}
+
+export const addPost = (postText: string) => {
+
+    const newPost: PostType = {
+        id: new Date().getTime(),
+        message: postText,
 
     }
+
+    state.profilePage.posts.push()
 }
