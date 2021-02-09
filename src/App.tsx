@@ -10,7 +10,6 @@ import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";
 import {addPost, RootStateType, updateNewPostText} from "./redux/state";
 
-
 type PropsType = {
     state: RootStateType
 }
