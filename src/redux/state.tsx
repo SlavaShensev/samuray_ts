@@ -15,6 +15,7 @@ export type PostType = {
 }
 export type ProfilePageType = {
     posts: Array<PostType>
+    newPostText: string
 }
 export type DialogsPageType = {
     dialog: Array<DialogType>
@@ -25,7 +26,7 @@ export type RootStateType = {
     dialogsPage: DialogsPageType
 }
 
-export type AddPost = (message: string) => void
+export type AddPost = () => void
 
 export const state: RootStateType = {
     profilePage: {
@@ -34,6 +35,7 @@ export const state: RootStateType = {
             {id: 2, message: 'Slava! Where are you go?'},
             {id: 3, message: 'Are you reading React?'},
         ],
+        newPostText: ''
 
     },
     dialogsPage: {
@@ -66,12 +68,16 @@ export const state: RootStateType = {
     },
 }
 
-export const addPost:AddPost = (postText:string) => {
+export const addPost:AddPost = () => {
     const newPost: PostType = {
         id: new Date().getTime(),
-        message: postText,
+        message: state.profilePage.newPostText
     }
-    state.profilePage.posts.push(newPost)
+    state.profilePage.posts.unshift(newPost)
     rerenderEntireTree(state)
-    console.log(state.profilePage.posts)
+}
+
+export const updateNewPostText = (newText: string) => {
+    state.profilePage.newPostText = newText
+    rerenderEntireTree(state)
 }
