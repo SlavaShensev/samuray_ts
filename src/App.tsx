@@ -8,14 +8,14 @@ import Dialogs from "./component/Dialogs/Dialogs";
 import Music from "./component/Music/Music";
 import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";
-import {RootStateType} from "./redux/store";
-
+import {StoreType} from "./redux/store";
 
 type PropsType = {
-    state: RootStateType
+    store: StoreType
 }
 
-const App = (props: PropsType) => {
+const App: React.FC<PropsType> = (props) => {
+    const store = props.store.getState()
     return (
 
         <div className='appWrapper'>
@@ -23,12 +23,12 @@ const App = (props: PropsType) => {
             <Navbar/>
             <div className='appWrapperContent'>
                 <Route path={'/dialogs'}
-                       render={() => <Dialogs dialogs={props.state.dialogsPage}/>}/>
+                       render={() => <Dialogs dialogs={store.dialogsPage}/>}/>
                 <Route path={'/profile'} render={() => <Profile
-                    profilePage={props.state.profilePage}
-                    message={props.state.profilePage.newPostText}
-                    addPost={addPost}
-                    updateNewPostText={updateNewPostText}
+                    profilePage={store.profilePage}
+                    message={store.profilePage.newPostText}
+                    addPost={props.store.addPost.bind(props.store)}
+                    updateNewPostText={props.store.updateNewPostText.bind(props.store)}
                 />}/>
                 <Route path={'/news'} component={Music}/>
                 <Route path={'/music'} component={News}/>

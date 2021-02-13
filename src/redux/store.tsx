@@ -30,9 +30,10 @@ export type StoreType = {
     addPost: () => void
     updateNewPostText: (newText: string) => void
     subscribe: (callback: () => void) => void
+    getState: () => RootStateType
 }
 
-export const store: StoreType = {
+export let store: StoreType = {
     _state: {
         profilePage: {
             posts: [
@@ -90,5 +91,8 @@ export const store: StoreType = {
     },
     subscribe(callback: () => void) {
         this._rerenderEntireTree = callback
+    },
+    getState() {
+        return this._state
     }
 }
