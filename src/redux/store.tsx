@@ -72,7 +72,6 @@ export let store: StoreType = {
                 },
             ],
         },
-
     },
     _rerenderEntireTree() {
         console.log('State changed')
