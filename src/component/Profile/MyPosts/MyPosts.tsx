@@ -1,5 +1,5 @@
 import React from 'react';
-import {AddPost, PostType} from '../../../redux/state';
+import {AddPost, PostType} from '../../../redux/store';
 import { UpdateNewPostTextType } from '../Profile';
 import Post from "./Post/Post";
 

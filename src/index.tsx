@@ -1,23 +1,23 @@
-import {RootStateType, state, subscribe} from './redux/state';
+import {RootStateType, store} from './redux/store';
 import ReactDOM from "react-dom";
 import {BrowserRouter} from "react-router-dom";
 import React from "react";
 import App from "./App";
 
 
-const rerenderEntireTree = (state: RootStateType) => {
+const rerenderEntireTree = (store: RootStateType) => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
-                <App state={state}/>
+                <App store={store}/>
             </React.StrictMode>,
         </BrowserRouter>, document.getElementById('root')
     );
 }
 
-rerenderEntireTree(state)
+store._rerenderEntireTree(store._state)
 
-subscribe(rerenderEntireTree)
+store.subscribe(rerenderEntireTree)
 
 
 

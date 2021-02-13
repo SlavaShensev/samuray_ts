@@ -1,7 +1,7 @@
 import React from 'react';
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import {AddPost, ProfilePageType} from "../../redux/state";
+import {AddPost, ProfilePageType} from "../../redux/store";
 
 export type UpdateNewPostTextType = (newText: string) => void
 

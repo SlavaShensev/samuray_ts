@@ -8,7 +8,8 @@ import Dialogs from "./component/Dialogs/Dialogs";
 import Music from "./component/Music/Music";
 import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";
-import {addPost, RootStateType, updateNewPostText} from "./redux/state";
+import {RootStateType} from "./redux/store";
+
 
 type PropsType = {
     state: RootStateType
