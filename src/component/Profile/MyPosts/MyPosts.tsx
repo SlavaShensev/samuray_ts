@@ -1,30 +1,25 @@
 import React from 'react';
-import { PostType} from '../../../redux/store';
-import { UpdateNewPostTextType } from '../Profile';
+import {DispatchActionsType, PostType} from '../../../redux/store';
 import Post from "./Post/Post";
 
 type MyPostsType = {
     posts: Array<PostType>
-    addPost: () => void
     newPostText: string
-    updateNewPostText: UpdateNewPostTextType
+    dispatch: (action: DispatchActionsType) => void
 }
 
 const MyPosts = (props: MyPostsType) => {
-
     const postsElements = props.posts
         .map(p => <Post key={p.id} {...p}/>)
-
     const newPostElement = React.createRef<HTMLTextAreaElement>()
-
     const addPost = () => {
-        props.addPost()
-        props.updateNewPostText('')
+        props.dispatch({type:"ADD-POST", newPostText: props.newPostText})
+        props.dispatch({type:"UPDATE-NEW-POST-TEXT", newText: ''})
     }
 
     const onPostChange = () => {
         let text = newPostElement.current ? newPostElement.current.value : '----'
-        props.updateNewPostText(text)
+        props.dispatch({type:"UPDATE-NEW-POST-TEXT", newText: text})
     }
 
     return (
