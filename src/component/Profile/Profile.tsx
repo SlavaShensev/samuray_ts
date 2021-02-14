@@ -1,30 +1,20 @@
 import React from 'react';
 import MyPosts from "./MyPosts/MyPosts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import {ProfilePageType} from "../../redux/store";
-
-export type UpdateNewPostTextType = (newText: string) => void
+import {DispatchActionsType, ProfilePageType} from "../../redux/store";
 
 type ProfilePropsType = {
     profilePage: ProfilePageType
-    addPost: ()=> void
-    updateNewPostText: UpdateNewPostTextType
-    message: string
-
+    dispatch: (action: DispatchActionsType) => void
 }
 
 const Profile = (props:ProfilePropsType) => {
-    const posts = props.profilePage.posts
-    const addPost = props.addPost
-    const newPostText = props.profilePage.newPostText
-    const updateNewPostText = props.updateNewPostText
+    console.log(props)
     return (
         <div>
             <ProfileInfo title={'Hello!'} />
-            <MyPosts posts={posts}
-                     addPost={addPost}
+            <MyPosts posts={props}
                      newPostText={newPostText}
-                     updateNewPostText={updateNewPostText}
             />
         </div>
     )

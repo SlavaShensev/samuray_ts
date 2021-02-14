@@ -15,20 +15,17 @@ type PropsType = {
 }
 
 const App: React.FC<PropsType> = (props) => {
-    const store = props.store.getState()
+const state = props.store.getState()
     return (
-
         <div className='appWrapper'>
             <Header/>
             <Navbar/>
             <div className='appWrapperContent'>
                 <Route path={'/dialogs'}
-                       render={() => <Dialogs dialogs={store.dialogsPage}/>}/>
+                       render={() => <Dialogs dialogs={state.dialogsPage}/>}/>
                 <Route path={'/profile'} render={() => <Profile
-                    profilePage={store.profilePage}
-                    message={store.profilePage.newPostText}
-                    addPost={props.store.addPost.bind(props.store)}
-                    updateNewPostText={props.store.updateNewPostText.bind(props.store)}
+                    profilePage={state.profilePage}
+                    dispatch={props.store.dispatch.bind(props.store)}
                 />}/>
                 <Route path={'/news'} component={Music}/>
                 <Route path={'/music'} component={News}/>
