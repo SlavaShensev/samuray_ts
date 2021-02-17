@@ -18,6 +18,7 @@ export type ProfilePageType = {
 export type DialogsPageType = {
     dialog: Array<DialogType>
     messages: Array<MessageType>
+    newMessage: string
 }
 export type RootStateType = {
     profilePage: ProfilePageType
@@ -32,7 +33,11 @@ export type StoreType = {
     dispatch: (action: DispatchActionsType) => void
 }
 
-export type DispatchActionsType = ReturnType<typeof addPostAC> | ReturnType<typeof updateNewTextAC>
+export type DispatchActionsType = ReturnType<typeof addPostAC> |
+    ReturnType<typeof updateNewTextAC> |
+    ReturnType<typeof addMessageAC> |
+    ReturnType<typeof updateNewMessageAC>
+
 
 export const addPostAC = (postText: string) => {
     return {
@@ -45,6 +50,20 @@ export const updateNewTextAC = (newPost: string) => {
     return {
         type: "UPDATE-NEW-POST-TEXT",
         newText: newPost
+    } as const
+}
+
+export const addMessageAC = (addMessage: string) => {
+    return {
+        type: 'ADD-MESSAGE',
+        newMessage: addMessage
+    } as const
+}
+
+export const updateNewMessageAC = (newPost: string) => {
+    return {
+        type: "UPDATE-NEW-MESSAGE",
+        newPostMessage: newPost,
     } as const
 }
 
@@ -86,6 +105,7 @@ export let store: StoreType = {
                     likesCount: 23,
                 },
             ],
+            newMessage: ''
         },
     },
     _rerenderEntireTree() {
@@ -104,9 +124,21 @@ export let store: StoreType = {
                 message: action.newPostText
             }
             this._state.profilePage.posts.push(newPost)
+            this._state.profilePage.newPostText = ''
             this._rerenderEntireTree()
         } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
             this._state.profilePage.newPostText = action.newText
+            this._rerenderEntireTree()
+        } else if (action.type === 'ADD-MESSAGE') {
+            const createMessage = {
+                id: new Date().getTime(),
+                message: action.newMessage,
+                likesCount: 0,
+            }
+            this._state.dialogsPage.messages.push(createMessage)
+            this._rerenderEntireTree()
+        }  else if (action.type === 'UPDATE-NEW-MESSAGE') {
+            this._state.dialogsPage.newMessage = action.newPostMessage
             this._rerenderEntireTree()
         }
     }

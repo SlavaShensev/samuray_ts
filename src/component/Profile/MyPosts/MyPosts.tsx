@@ -11,14 +11,14 @@ type MyPostsType = {
 const MyPosts = (props: MyPostsType) => {
     const postsElements = props.posts
         .map(p => <Post key={p.id} {...p}/>)
-    const newPostElement = React.createRef<HTMLTextAreaElement>()
+    let newPostElement = React.createRef<HTMLTextAreaElement>()
     const addPost = () => {
         props.dispatch(addPostAC(props.newPostText))
         props.dispatch(updateNewTextAC(props.newPostText))
     }
 
     const onPostChange = () => {
-        let text = newPostElement.current ? newPostElement.current.value : '----'
+        const text = newPostElement.current ? newPostElement.current.value : '----'
         props.dispatch(updateNewTextAC(text))
     }
 

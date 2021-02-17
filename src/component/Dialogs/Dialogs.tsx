@@ -2,10 +2,16 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from "./Message/Message";
-import {DialogsPageType} from '../../redux/store';
+import {
+    addMessageAC,
+    DialogsPageType,
+    DispatchActionsType,
+    updateNewMessageAC
+} from '../../redux/store';
 
 type DialogsPropsType = {
     dialogs: DialogsPageType
+    dispatch: (action: DispatchActionsType) => void
 }
 
 const Dialogs = (props: DialogsPropsType) => {
@@ -17,8 +23,13 @@ const Dialogs = (props: DialogsPropsType) => {
     const newMessage = React.createRef<HTMLTextAreaElement>()
 
     const addMessage = () => {
-        const message = newMessage.current?.value
-        alert(message)
+        props.dispatch(addMessageAC(props.dialogs.newMessage))
+        props.dispatch(updateNewMessageAC(props.dialogs.newMessage))
+    }
+
+    const onMessageChange = () => {
+        const message = newMessage.current ? newMessage.current.value : '----'
+        props.dispatch(updateNewMessageAC(message))
     }
 
     return (
@@ -30,7 +41,10 @@ const Dialogs = (props: DialogsPropsType) => {
                 {messagesItem}
             </div>
             <textarea ref={newMessage}
-                      className={s.inputDialog}/>
+                      onChange={onMessageChange}
+                      className={s.inputDialog}
+                      value={props.dialogs.newMessage}
+            />
             <button className={s.button}
                     onClick={addMessage}>
                 click me
