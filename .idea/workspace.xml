@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="E:\Work\Projects\online IT kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -125,7 +126,7 @@
       <workItem from="1613418343195" duration="4475000" />
       <workItem from="1613503262334" duration="29020000" />
       <workItem from="1613721318370" duration="156000" />
-      <workItem from="1613731373435" duration="3876000" />
+      <workItem from="1613731373435" duration="7535000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -281,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613718943578</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add_reducers_and_typing_(41)">
+      <created>1613736077656</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1613736077656</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +331,7 @@
     <MESSAGE value="add_dispatch_done_and_start_create_dispatchCreator" />
     <MESSAGE value="add_message_on_wall_in_messages" />
     <MESSAGE value="add_reducers_(41)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_reducers_(41)" />
+    <MESSAGE value="add_reducers_and_typing_(41)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_reducers_and_typing_(41)" />
   </component>
 </project>
