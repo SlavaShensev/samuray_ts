@@ -1,7 +1,7 @@
 import React from 'react';
-import {DispatchActionsType, StoreType} from "./store";
+import {DialogsPageType, DispatchActionsType} from "./store";
 
-export const dialogsReduser = (state: StoreType, action: DispatchActionsType) => {
+export const dialogsReduser = (dialogsPage: DialogsPageType, action: DispatchActionsType): DialogsPageType => {
     switch (action.type) {
         case 'ADD-MESSAGE':
             const createMessage = {
@@ -9,12 +9,14 @@ export const dialogsReduser = (state: StoreType, action: DispatchActionsType) =>
                 message: action.newMessage,
                 likesCount: 0,
             }
-            state._state.dialogsPage.messages.push(createMessage)
-            state._state.dialogsPage.newMessage = ''
-            return state
+            dialogsPage.messages.push(createMessage);
+            dialogsPage.newMessage = ''
+            return dialogsPage
         case 'UPDATE-NEW-MESSAGE':
-            state._state.dialogsPage.newMessage = action.newPostMessage
-            return state
+            dialogsPage.newMessage = action.newPostMessage
+            return dialogsPage
+        default:
+            return dialogsPage
     }
 }
 

@@ -1,20 +1,21 @@
 import React from 'react';
-import {DispatchActionsType, StoreType} from "./store";
+import {DispatchActionsType, ProfilePageType} from "./store";
 
-export const profileReduser = (state: StoreType, action: DispatchActionsType) => {
+export const profileReduser = (profilePage: ProfilePageType, action: DispatchActionsType): ProfilePageType => {
     switch (action.type) {
         case 'ADD-POST':
             const newPost = {
                 id: new Date().getTime(),
                 message: action.newPostText
             }
-            state._state.profilePage.posts.push(newPost)
-            return state
+            profilePage.posts.push(newPost)
+            profilePage.newPostText = ''
+            return profilePage
         case 'UPDATE-NEW-POST-TEXT':
-            state._state.profilePage.newPostText = action.newText
-            return state
+            profilePage.newPostText = action.newText
+            return profilePage
         default:
-            return state
+            return profilePage
     }
 }
 
