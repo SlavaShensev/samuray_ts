@@ -1,3 +1,6 @@
+import {addPostAC, profileReduser, updateNewTextAC} from "./profile-reduser";
+import {addMessageAC, dialogsReduser, updateNewMessageAC} from "./dialogs-reduser";
+
 export type MessageType = {
     id: number
     message: string
@@ -37,35 +40,6 @@ export type DispatchActionsType = ReturnType<typeof addPostAC> |
     ReturnType<typeof updateNewTextAC> |
     ReturnType<typeof addMessageAC> |
     ReturnType<typeof updateNewMessageAC>
-
-
-export const addPostAC = (postText: string) => {
-    return {
-        type: 'ADD-POST',
-        newPostText: postText
-    } as const
-}
-
-export const updateNewTextAC = (newPost: string) => {
-    return {
-        type: "UPDATE-NEW-POST-TEXT",
-        newText: newPost
-    } as const
-}
-
-export const addMessageAC = (addMessage: string) => {
-    return {
-        type: 'ADD-MESSAGE',
-        newMessage: addMessage
-    } as const
-}
-
-export const updateNewMessageAC = (newPost: string) => {
-    return {
-        type: "UPDATE-NEW-MESSAGE",
-        newPostMessage: newPost,
-    } as const
-}
 
 export let store: StoreType = {
     _state: {
@@ -118,28 +92,8 @@ export let store: StoreType = {
         return this._state
     },
     dispatch(action) {
-        if (action.type === 'ADD-POST') {
-            const newPost = {
-                id: new Date().getTime(),
-                message: action.newPostText
-            }
-            this._state.profilePage.posts.push(newPost)
-            this._state.profilePage.newPostText = ''
-            this._rerenderEntireTree()
-        } else if (action.type === 'UPDATE-NEW-POST-TEXT') {
-            this._state.profilePage.newPostText = action.newText
-            this._rerenderEntireTree()
-        } else if (action.type === 'ADD-MESSAGE') {
-            const createMessage = {
-                id: new Date().getTime(),
-                message: action.newMessage,
-                likesCount: 0,
-            }
-            this._state.dialogsPage.messages.push(createMessage)
-            this._rerenderEntireTree()
-        }  else if (action.type === 'UPDATE-NEW-MESSAGE') {
-            this._state.dialogsPage.newMessage = action.newPostMessage
-            this._rerenderEntireTree()
-        }
+        this._state.profilePage = profileReduser(this._state.profilePage, action)
+        this._state.dialogsPage = dialogsReduser(this._state.dialogsPage, action)
+        this._rerenderEntireTree()
     }
 }

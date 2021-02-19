@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.tsx" afterDir="false" />
@@ -19,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -32,7 +33,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -45,16 +46,17 @@
     <property name="ts.external.directory.path" value="E:\Work\Projects\online IT kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts\Post" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\redux" />
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -124,7 +126,7 @@
       <workItem from="1613221686827" duration="17007000" />
       <workItem from="1613285619789" duration="17780000" />
       <workItem from="1613418343195" duration="4475000" />
-      <workItem from="1613503262334" duration="11648000" />
+      <workItem from="1613503262334" duration="26875000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -266,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613304649011</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add_message_on_wall_in_messages">
+      <created>1613594493287</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1613594493287</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +315,7 @@
     <MESSAGE value="37_done" />
     <MESSAGE value="add_dispatch_and_type_refactoring_Profile" />
     <MESSAGE value="add_dispatch_done_and_start_create_dispatchCreator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_dispatch_done_and_start_create_dispatchCreator" />
+    <MESSAGE value="add_message_on_wall_in_messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_message_on_wall_in_messages" />
   </component>
 </project>

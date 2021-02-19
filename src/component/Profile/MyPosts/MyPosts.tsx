@@ -1,6 +1,7 @@
 import React from 'react';
-import {addPostAC, DispatchActionsType, PostType, updateNewTextAC} from '../../../redux/store';
+import {DispatchActionsType, PostType} from '../../../redux/store';
 import Post from "./Post/Post";
+import {addPostAC, updateNewTextAC} from "../../../redux/profile-reduser";
 
 type MyPostsType = {
     posts: Array<PostType>
