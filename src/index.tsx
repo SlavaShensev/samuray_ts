@@ -4,20 +4,15 @@ import React from "react";
 import App from "./App";
 import store from "./redux/redux-store";
 
+ReactDOM.render(
+    <BrowserRouter>
+        <React.StrictMode>
+            <App store={store}/>
+        </React.StrictMode>
+    </BrowserRouter>, document.getElementById('root')
+);
 
-const rerenderEntireTree = () => {
-    ReactDOM.render(
-        <BrowserRouter>
-            <React.StrictMode>
-                <App store={store}/>
-            </React.StrictMode>
-        </BrowserRouter>, document.getElementById('root')
-    );
-}
 
-rerenderEntireTree()
-
-store.subscribe(rerenderEntireTree)
 
 
 

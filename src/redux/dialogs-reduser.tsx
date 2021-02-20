@@ -1,31 +1,72 @@
 import React from 'react';
-import {DialogsPageType, DispatchActionsType} from "./store";
+import {DialogsPageType} from "./store";
 
-export const dialogsReduser = (dialogsPage: DialogsPageType, action: DispatchActionsType): DialogsPageType => {
+let initialState = {
+    dialog: [
+        {id: 1, name: 'Slava'},
+        {id: 2, name: 'Sasha'},
+        {id: 3, name: 'Elena'},
+        {id: 4, name: 'Antony'},
+        {id: 5, name: 'Tom'},
+        {id: 6, name: 'Olya'},
+        {id: 7, name: 'Sveta'},
+    ],
+    messages: [
+        {
+            id: 1,
+            message: 'Hello, how are you?',
+            likesCount: 13,
+        },
+        {
+            id: 2,
+            message: 'It is my first post',
+            likesCount: 34,
+        },
+        {
+            id: 3,
+            message: 'It is my second post',
+            likesCount: 23,
+        },
+    ],
+    newMessage: ''
+}
+
+export const dialogsReduser = (state: DialogsPageType = initialState, action: ActionsType): DialogsPageType => {
+
     switch (action.type) {
+
         case 'ADD-MESSAGE':
             const createMessage = {
                 id: new Date().getTime(),
-                message: action.newMessage,
+                message: state.newMessage,
                 likesCount: 0,
             }
-            dialogsPage.messages.push(createMessage);
-            dialogsPage.newMessage = ''
-            return dialogsPage
+            return {
+                ...state,
+                messages: [...state.messages, createMessage]
+            }
+
         case 'UPDATE-NEW-MESSAGE':
-            dialogsPage.newMessage = action.newPostMessage
-            return dialogsPage
+            return {
+                ...state,
+                newMessage: action.newPostMessage
+            }
+
         default:
-            return dialogsPage
+            return state
     }
 }
 
-export const addMessageAC = (addMessage: string) => {
+type TypeAddMessage = ReturnType<typeof addMessageAC>
+type TypeUpdateNewMessage = ReturnType<typeof updateNewMessageAC>
+type ActionsType = TypeAddMessage | TypeUpdateNewMessage
+
+export const addMessageAC = () => {
     return {
         type: 'ADD-MESSAGE',
-        newMessage: addMessage
     } as const
 }
+
 export const updateNewMessageAC = (newPost: string) => {
     return {
         type: "UPDATE-NEW-MESSAGE",

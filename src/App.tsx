@@ -2,33 +2,21 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from "./component/Header/Header";
 import Navbar from "./component/Navbar/Navbar";
-import Profile from "./component/Profile/Profile";
-import Dialogs from "./component/Dialogs/Dialogs";
 import Music from "./component/Music/Music";
 import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";
 import './App.css';
-import {StoreType} from "./redux/store";
+import DialogsContainer from "./component/Dialogs/DialogsContainer";
+import ProfileContainer from "./component/Profile/ProfileContanier";
 
-type PropsType = {
-    store: StoreType
-}
-
-const App: React.FC<PropsType> = (props) => {
-const state = props.store.getState()
+const App = () => {
     return (
         <div className='appWrapper'>
             <Header/>
             <Navbar/>
             <div className='appWrapperContent'>
-                <Route path={'/dialogs'}
-                       render={() => <Dialogs dialogs={state.dialogsPage}
-                                              dispatch={props.store.dispatch.bind(props.store)}
-                       />}/>
-                <Route path={'/profile'} render={() => <Profile
-                    profilePage={state.profilePage}
-                    dispatch={props.store.dispatch.bind(props.store)}
-                />}/>
+                <Route path={'/dialogs'} render={() => <DialogsContainer />}/>
+                <Route path={'/profile'} render={() => <ProfileContainer/>}/>
                 <Route path={'/news'} component={Music}/>
                 <Route path={'/music'} component={News}/>
                 <Route path={'/setting'} component={Setting}/>
