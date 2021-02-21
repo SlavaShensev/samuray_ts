@@ -1,7 +1,6 @@
 import React from 'react';
-import {ProfilePageType} from "./store";
 
-type  InitialStateType = {
+type InitialStateType = {
     posts: any
     newPostText: any
 }
@@ -13,6 +12,16 @@ const initialState: InitialStateType = {
         {id: 3, message: 'Are you reading React?'},
     ],
     newPostText: ''
+}
+
+export type PostType = {
+    id: number
+    message: string
+}
+
+type ProfilePageType = {
+    posts: Array<PostType>
+    newPostText: string
 }
 
 export const profileReduser = (state: ProfilePageType = initialState,

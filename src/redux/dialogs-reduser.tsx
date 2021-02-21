@@ -1,10 +1,26 @@
 import React from 'react';
-import {DialogsPageType} from "./store";
+
+export type DialogType = {
+    id: number
+    name: string
+}
+
+export type MessageType = {
+    id: number
+    message: string
+    likesCount: number
+}
 
 type InitialStateType = {
-    dialog: any
-    messages: any
-    newMessage: any
+    dialog: DialogType[]
+    messages: MessageType[]
+    newMessage: string
+}
+
+type DialogsPageType = {
+    dialog: Array<DialogType>
+    messages: Array<MessageType>
+    newMessage: string
 }
 
 const initialState: InitialStateType = {
