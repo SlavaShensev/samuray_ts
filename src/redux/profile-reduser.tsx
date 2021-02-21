@@ -1,23 +1,41 @@
 import React from 'react';
-import {DispatchActionsType, ProfilePageType} from "./store";
+import {ProfilePageType} from "./store";
 
-export const profileReduser = (profilePage: ProfilePageType, action: DispatchActionsType): ProfilePageType => {
+const initialState = {
+    posts: [
+        {id: 1, message: 'Hello'},
+        {id: 2, message: 'Slava! Where are you go?'},
+        {id: 3, message: 'Are you reading React?'},
+    ],
+    newPostText: ''
+}
+
+export const profileReduser = (state: ProfilePageType = initialState,
+                               action: ActionsType): ProfilePageType => {
     switch (action.type) {
         case 'ADD-POST':
             const newPost = {
                 id: new Date().getTime(),
                 message: action.newPostText
             }
-            profilePage.posts.push(newPost)
-            profilePage.newPostText = ''
-            return profilePage
+            return {
+                ...state,
+                posts: [...state.posts, newPost]
+            }
+
         case 'UPDATE-NEW-POST-TEXT':
-            profilePage.newPostText = action.newText
-            return profilePage
+            return {
+                ...state,
+                newPostText: action.newText
+            }
         default:
-            return profilePage
+            return state
     }
 }
+
+type TypeAddPost = ReturnType<typeof addPostAC>
+type TypeUpdateNewText = ReturnType<typeof updateNewTextAC>
+type ActionsType = TypeAddPost | TypeUpdateNewText
 
 export const addPostAC = (postText: string) => {
     return {

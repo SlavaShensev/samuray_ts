@@ -6,29 +6,29 @@ import {Dispatch} from "redux";
 import {addMessageAC, updateNewMessageAC} from "../../redux/dialogs-reduser";
 
 type TypeMapStateToProps = {
-    messages: any,
-    dialogs: any,
-    newMessage:any
+    messages: any
+    dialogs: any
+    newMessage: any
 }
 type TypeMapDispatchToProps = {
-    addMessage:()=>void
-    updateNewMessage:(text:string)=>void
+    addMessage: () => void
+    updateNewMessage: (text: string) => void
 }
 
 const mapStateToProps = (state: TypeStore): TypeMapStateToProps => {
     return {
         messages: state.dialogsPage.messages,
         dialogs: state.dialogsPage.dialog,
-        newMessage:state.dialogsPage.newMessage
+        newMessage: state.dialogsPage.newMessage,
     }
 };
 
 const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
     return {
-        addMessage:()=>{
+        addMessage: () => {
             dispatch(addMessageAC())
         },
-        updateNewMessage:(text:string)=>{
+        updateNewMessage: (text: string) => {
             dispatch(updateNewMessageAC(text))
         }
     }

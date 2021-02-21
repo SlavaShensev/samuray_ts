@@ -8,13 +8,13 @@ type ProfilePropsType = {
     dispatch: (action: DispatchActionsType) => void
 }
 
-const Profile = ({profilePage, dispatch}) => {
+const Profile = (props:ProfilePropsType) => {
     return (
         <div>
             <ProfileInfo title={'Hello!'} />
-            <MyPosts posts={profilePage.posts}
-                     newPostText={profilePage.newPostText}
-                     dispatch={dispatch}
+            <MyPosts posts={props.profilePage.posts}
+                     newPostText={props.profilePage.newPostText}
+                     dispatch={props.dispatch}
             />
         </div>
     )

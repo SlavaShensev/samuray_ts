@@ -1,7 +1,7 @@
 import React from 'react';
 import {DialogsPageType} from "./store";
 
-let initialState = {
+const initialState = {
     dialog: [
         {id: 1, name: 'Slava'},
         {id: 2, name: 'Sasha'},
@@ -31,10 +31,9 @@ let initialState = {
     newMessage: ''
 }
 
-export const dialogsReduser = (state: DialogsPageType = initialState, action: ActionsType): DialogsPageType => {
-
+export const dialogsReduser = (state: DialogsPageType = initialState,
+                               action: ActionsType): DialogsPageType => {
     switch (action.type) {
-
         case 'ADD-MESSAGE':
             const createMessage = {
                 id: new Date().getTime(),
@@ -45,13 +44,11 @@ export const dialogsReduser = (state: DialogsPageType = initialState, action: Ac
                 ...state,
                 messages: [...state.messages, createMessage]
             }
-
         case 'UPDATE-NEW-MESSAGE':
             return {
                 ...state,
                 newMessage: action.newPostMessage
             }
-
         default:
             return state
     }
