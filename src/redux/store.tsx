@@ -28,7 +28,7 @@ export type RootStateType = {
     dialogsPage: DialogsPageType
 }
 
-export type StoreType = {
+ type StoreType = {
     _state: RootStateType
     _rerenderEntireTree: () => void
     subscribe: (callback: () => void) => void

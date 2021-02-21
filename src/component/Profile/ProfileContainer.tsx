@@ -1,9 +1,11 @@
 import React from 'react';
 import {connect} from "react-redux";
 import Profile from './Profile';
-import {TypeStore} from "../../redux/redux-store";
+import {AppStateType} from "../../redux/redux-store";
 import {Dispatch} from "redux";
 import {addPostAC, updateNewTextAC} from "../../redux/profile-reduser";
+
+type OwnProps ={}
 
 type TypeMapStateToProps = {
     posts: any
@@ -16,7 +18,7 @@ type TypeMapDispatchToProps = {
 }
 
 
-const mapStateToProps = (state: TypeStore): TypeMapStateToProps => {
+const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     return {
         posts: state.profilePage.posts,
         newPostText: state.profilePage.newPostText,
@@ -34,6 +36,6 @@ const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
     }
 }
 
-const ProfileContainer = connect(mapStateToProps, mapDispatchToProps)(Profile)
+const ProfileContainer = connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType >(mapStateToProps, mapDispatchToProps)(Profile)
 
 export default ProfileContainer

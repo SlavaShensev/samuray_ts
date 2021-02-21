@@ -9,6 +9,6 @@ const redusersBatch = combineReducers({
 
 let store = createStore(redusersBatch)
 
-export type TypeStore = ReturnType< typeof redusersBatch>
+export type AppStateType = ReturnType< typeof redusersBatch>
 
 export default store

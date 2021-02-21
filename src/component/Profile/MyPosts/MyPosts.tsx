@@ -6,7 +6,8 @@ import {addPostAC, updateNewTextAC} from "../../../redux/profile-reduser";
 type MyPostsType = {
     posts: Array<PostType>
     newPostText: string
-    dispatch: (action: DispatchActionsType) => void
+    addPost: (postText: string) => void
+    updateNewText: (newPost: string) => void
 }
 
 const MyPosts = (props: MyPostsType) => {
@@ -14,13 +15,13 @@ const MyPosts = (props: MyPostsType) => {
         .map(p => <Post key={p.id} {...p}/>)
     let newPostElement = React.createRef<HTMLTextAreaElement>()
     const addPost = () => {
-        props.dispatch(addPostAC(props.newPostText))
-        props.dispatch(updateNewTextAC(props.newPostText))
+        props.addPost(props.newPostText)
+        props.updateNewText(props.newPostText)
     }
 
     const onPostChange = () => {
         const text = newPostElement.current ? newPostElement.current.value : '----'
-        props.dispatch(updateNewTextAC(text))
+        props.updateNewText(text)
     }
 
     return (

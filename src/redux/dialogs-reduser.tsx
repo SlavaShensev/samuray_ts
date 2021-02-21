@@ -1,7 +1,13 @@
 import React from 'react';
 import {DialogsPageType} from "./store";
 
-const initialState = {
+type InitialStateType = {
+    dialog: any
+    messages: any
+    newMessage: any
+}
+
+const initialState: InitialStateType = {
     dialog: [
         {id: 1, name: 'Slava'},
         {id: 2, name: 'Sasha'},

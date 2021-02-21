@@ -4,11 +4,16 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContanier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContanier.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContanier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +137,7 @@
       <workItem from="1613731373435" duration="7535000" />
       <workItem from="1613815051058" duration="315000" />
       <workItem from="1613815413055" duration="64000" />
-      <workItem from="1613815513766" duration="27449000" />
+      <workItem from="1613815513766" duration="34655000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -302,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613853770146</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add_profileReduser_and_add_ProfileContainer">
+      <created>1613896967633</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613896967633</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +358,7 @@
     <MESSAGE value="add_reducers_(41)" />
     <MESSAGE value="add_reducers_and_typing_(41)" />
     <MESSAGE value="add_redux_done_dialogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_redux_done_dialogs" />
+    <MESSAGE value="add_profileReduser_and_add_ProfileContainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_profileReduser_and_add_ProfileContainer" />
   </component>
 </project>

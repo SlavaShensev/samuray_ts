@@ -1,7 +1,12 @@
 import React from 'react';
 import {ProfilePageType} from "./store";
 
-const initialState = {
+type  InitialStateType = {
+    posts: any
+    newPostText: any
+}
+
+const initialState: InitialStateType = {
     posts: [
         {id: 1, message: 'Hello'},
         {id: 2, message: 'Slava! Where are you go?'},

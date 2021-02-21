@@ -3,11 +3,14 @@ import {BrowserRouter} from "react-router-dom";
 import React from "react";
 import App from "./App";
 import store from "./redux/redux-store";
+import {Provider} from 'react-redux'
 
 ReactDOM.render(
     <BrowserRouter>
         <React.StrictMode>
-            <App store={store}/>
+            <Provider store={store}>
+            <App/>
+            </Provider>
         </React.StrictMode>
     </BrowserRouter>, document.getElementById('root')
 );
