@@ -1,10 +1,10 @@
 import {combineReducers, createStore} from "redux";
-import {profileReduser} from "./profile-reduser";
-import {dialogsReduser} from "./dialogs-reduser";
+import {profileReducer} from "./profile-reducer";
+import {dialogsReducer} from "./dialogs-reducer";
 
 const redusersBatch = combineReducers({
-    profilePage: profileReduser,
-    dialogsPage: dialogsReduser,
+    profilePage: profileReducer,
+    dialogsPage: dialogsReducer,
 })
 
 let store = createStore(redusersBatch)

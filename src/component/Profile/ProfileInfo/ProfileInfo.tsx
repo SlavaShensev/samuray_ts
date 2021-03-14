@@ -13,7 +13,7 @@ const ProfileInfo = (props: ProfileInfoType) => {
                 <img src={bg} className={s.bg}/>
             </div>
             <div>
-                Ava+description
+                {props.title}
             </div>
         </div>
     )

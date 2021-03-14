@@ -1,19 +1,18 @@
-import React from 'react';
 import {connect} from "react-redux";
 import Dialogs from "./Dialogs";
 import {AppStateType} from "../../redux/redux-store";
-import {addMessageAC, updateNewMessageAC} from "../../redux/dialogs-reduser";
+import {
+    addMessageAC,
+    DialogType,
+    MessageType,
+    updateNewMessageAC
+} from "../../redux/dialogs-reducer";
 import {Dispatch} from "redux";
 
-type MessageType = {
-    id: string
-    message: string
-}
-
 type TypeMapStateToProps = {
-    messages: any
-    dialogs: any
-    newMessage: any
+    messages: MessageType[]
+    dialogs: DialogType[]
+    newMessage: string
 }
 type TypeMapDispatchToProps = {
     addMessage: () => void

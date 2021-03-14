@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type DialogType = {
     id: number
     name: string
@@ -11,13 +9,13 @@ export type MessageType = {
     likesCount: number
 }
 
-type InitialStateType = {
+export type InitialStateType = {
     dialog: DialogType[]
     messages: MessageType[]
     newMessage: string
 }
 
-type DialogsPageType = {
+export type DialogsPageType = {
     dialog: Array<DialogType>
     messages: Array<MessageType>
     newMessage: string
@@ -53,7 +51,7 @@ const initialState: InitialStateType = {
     newMessage: ''
 }
 
-export const dialogsReduser = (state: DialogsPageType = initialState,
+export const dialogsReducer = (state: DialogsPageType = initialState,
                                action: ActionsType): DialogsPageType => {
     switch (action.type) {
         case 'ADD-MESSAGE':
@@ -64,12 +62,13 @@ export const dialogsReduser = (state: DialogsPageType = initialState,
             }
             return {
                 ...state,
-                messages: [...state.messages, createMessage]
+                messages: [...state.messages, createMessage],
+                newMessage: ''
             }
         case 'UPDATE-NEW-MESSAGE':
             return {
                 ...state,
-                newMessage: action.newPostMessage
+                newMessage: action.newPostMessage,
             }
         default:
             return state
@@ -78,7 +77,7 @@ export const dialogsReduser = (state: DialogsPageType = initialState,
 
 type TypeAddMessage = ReturnType<typeof addMessageAC>
 type TypeUpdateNewMessage = ReturnType<typeof updateNewMessageAC>
-type ActionsType = TypeAddMessage | TypeUpdateNewMessage
+export type ActionsType = TypeAddMessage | TypeUpdateNewMessage
 
 export const addMessageAC = () => {
     return {

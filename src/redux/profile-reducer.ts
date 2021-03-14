@@ -1,8 +1,6 @@
-import React from 'react';
-
 type InitialStateType = {
-    posts: any
-    newPostText: any
+    posts: Array<PostType>
+    newPostText: string
 }
 
 const initialState: InitialStateType = {
@@ -24,7 +22,7 @@ type ProfilePageType = {
     newPostText: string
 }
 
-export const profileReduser = (state: ProfilePageType = initialState,
+export const profileReducer = (state: ProfilePageType = initialState,
                                action: ActionsType): ProfilePageType => {
     switch (action.type) {
         case 'ADD-POST':
@@ -34,19 +32,19 @@ export const profileReduser = (state: ProfilePageType = initialState,
             }
             return {
                 ...state,
-                posts: [...state.posts, newPost]
+                posts: [...state.posts, newPost],
+                newPostText: ''
             }
 
         case 'UPDATE-NEW-POST-TEXT':
             return {
                 ...state,
-                newPostText: action.newText
+                newPostText: action.newText,
             }
         default:
             return state
     }
 }
-
 type TypeAddPost = ReturnType<typeof addPostAC>
 type TypeUpdateNewText = ReturnType<typeof updateNewTextAC>
 type ActionsType = TypeAddPost | TypeUpdateNewText
