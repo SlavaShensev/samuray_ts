@@ -3,13 +3,12 @@ type UserType = {
     fullName: string
     followed: boolean
     status: string
-    location: {city: string, country: string}
+    location: { city: string, country: string }
 }
 
 type InitialStateType = {
     users: UserType[]
 }
-
 
 const initialState: InitialStateType = {
     users: [
@@ -37,28 +36,48 @@ const initialState: InitialStateType = {
     ],
 }
 
-export const usersReducer = (state: DialogsPageType = initialState,
-                               action: ActionsType): DialogsPageType => {
+export const usersReducer = (state: InitialStateType = initialState,
+                             action: ActionsType): InitialStateType => {
     switch (action.type) {
-        case 'ADD-MESSAGE':
+        case "FOLLOW":
+            return {
+                ...state,
+                users: state.users.map(u => {
+                    if (u.id === action.userID) {
+                        return {...u, followed: true}
+                    }
+                    return u
+                })
+            }
+        case "UNFOLLOW":
+            return {
+                ...state,
+                users: state.users.map(u => {
+                    if (u.id === action.userID) {
+                        return {...u, followed: false}
+                    }
+                    return u
+                })
+            }
         default:
             return state
     }
 }
 
-type TypeAddMessage = ReturnType<typeof addMessageAC>
-type TypeUpdateNewMessage = ReturnType<typeof updateNewMessageAC>
-export type ActionsType = TypeAddMessage | TypeUpdateNewMessage
+type TypeFollowAC = ReturnType<typeof followAC>
+type TypeUnfollowAC = ReturnType<typeof unfollowAC>
+type ActionsType = TypeFollowAC | TypeUnfollowAC
 
-export const addMessageAC = () => {
+const followAC = (userID: number) => {
     return {
-        type: 'ADD-MESSAGE',
+        type: 'FOLLOW',
+        userID
     } as const
 }
 
-export const updateNewMessageAC = (newPost: string) => {
+const unfollowAC = (userID: number) => {
     return {
-        type: "UPDATE-NEW-MESSAGE",
-        newPostMessage: newPost,
+        type: 'UNFOLLOW',
+        userID
     } as const
 }
