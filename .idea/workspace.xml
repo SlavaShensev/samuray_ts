@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogItem/DialogItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogItem/DialogItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Dialogs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/Message/Message.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/Message/Message.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/MyPosts.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/MyPosts/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/MyPosts/Post/Post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reduser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +131,7 @@
       <workItem from="1613815051058" duration="315000" />
       <workItem from="1613815413055" duration="64000" />
       <workItem from="1613815513766" duration="46077000" />
-      <workItem from="1615746200322" duration="3454000" />
+      <workItem from="1615746200322" duration="7104000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -335,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613916397801</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add_initial_state_users_reducer">
+      <created>1615750541324</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1615750541324</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="23-start_Dialogs" />
     <MESSAGE value="refactoring_dialogs_add_component" />
     <MESSAGE value="add+Post_component" />
     <MESSAGE value="23_TS_Dialogs_and_MyPosts" />
@@ -380,6 +373,7 @@
     <MESSAGE value="add_profileReduser_and_add_ProfileContainer" />
     <MESSAGE value="profile_Dialogs_done(49)" />
     <MESSAGE value="type_is_done_not_state" />
-    <option name="LAST_COMMIT_MESSAGE" value="type_is_done_not_state" />
+    <MESSAGE value="add_initial_state_users_reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_initial_state_users_reducer" />
   </component>
 </project>

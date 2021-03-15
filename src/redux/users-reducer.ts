@@ -1,41 +1,51 @@
-import {ActionsType, DialogsPageType, InitialStateType} from "./dialogs-reducer";
-
 const initialState: InitialStateType = {
-    dialog: [
-        {id: 1, name: 'Slava'},
-        {id: 2, name: 'Sasha'},
-        {id: 3, name: 'Elena'},
-        {id: 4, name: 'Antony'},
-        {id: 5, name: 'Tom'},
-        {id: 6, name: 'Olya'},
-        {id: 7, name: 'Sveta'},
-    ],
-    messages: [
+    users: [
         {
             id: 1,
-            message: 'Hello, how are you?',
-            likesCount: 13,
+            fullName: 'Slava',
+            followed: false,
+            status: ' I am a boss',
+            location: {city: 'Odessa', country: 'Ukraine'},
         },
         {
             id: 2,
-            message: 'It is my first post',
-            likesCount: 34,
+            followed: true,
+            fullName: 'Sasha',
+            status: ' I am a boss too',
+            location: {city: 'Kiev', country: 'Ukraine'},
         },
         {
             id: 3,
-            message: 'It is my second post',
-            likesCount: 23,
+            followed: false,
+            fullName: 'Sergey',
+            status: ' I am a big boss',
+            location: {city: 'Moscow', country: 'Russia'},
         },
     ],
-    newMessage: ''
 }
 
 export const dialogsReducer = (state: DialogsPageType = initialState,
                                action: ActionsType): DialogsPageType => {
     switch (action.type) {
         case 'ADD-MESSAGE':
-
         default:
             return state
     }
+}
+
+type TypeAddMessage = ReturnType<typeof addMessageAC>
+type TypeUpdateNewMessage = ReturnType<typeof updateNewMessageAC>
+export type ActionsType = TypeAddMessage | TypeUpdateNewMessage
+
+export const addMessageAC = () => {
+    return {
+        type: 'ADD-MESSAGE',
+    } as const
+}
+
+export const updateNewMessageAC = (newPost: string) => {
+    return {
+        type: "UPDATE-NEW-MESSAGE",
+        newPostMessage: newPost,
+    } as const
 }
