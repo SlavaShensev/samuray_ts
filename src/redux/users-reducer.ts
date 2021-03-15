@@ -59,6 +59,10 @@ export const usersReducer = (state: InitialStateType = initialState,
                     return u
                 })
             }
+            case "SET_USERS":
+                return {
+                    ...state, users: [...state.users, ...action.users]
+                }
         default:
             return state
     }
@@ -66,7 +70,8 @@ export const usersReducer = (state: InitialStateType = initialState,
 
 type TypeFollowAC = ReturnType<typeof followAC>
 type TypeUnfollowAC = ReturnType<typeof unfollowAC>
-type ActionsType = TypeFollowAC | TypeUnfollowAC
+type TypeSetUsersAC = ReturnType<typeof setUsersAC>
+type ActionsType = TypeFollowAC | TypeUnfollowAC | TypeSetUsersAC
 
 const followAC = (userID: number) => {
     return {
@@ -79,5 +84,12 @@ const unfollowAC = (userID: number) => {
     return {
         type: 'UNFOLLOW',
         userID
+    } as const
+}
+
+const setUsersAC = (users: UserType[]) => {
+    return {
+        type: 'SET_USERS',
+        users
     } as const
 }
