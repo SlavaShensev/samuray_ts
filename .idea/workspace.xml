@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -131,7 +129,7 @@
       <workItem from="1613815051058" duration="315000" />
       <workItem from="1613815413055" duration="64000" />
       <workItem from="1613815513766" duration="46077000" />
-      <workItem from="1615746200322" duration="7104000" />
+      <workItem from="1615746200322" duration="8127000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -329,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615750541324</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add_initial_right_state_for_users">
+      <created>1615793365485</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1615793365485</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +354,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactoring_dialogs_add_component" />
     <MESSAGE value="add+Post_component" />
     <MESSAGE value="23_TS_Dialogs_and_MyPosts" />
     <MESSAGE value="25_TS_map_Dialogs" />
@@ -374,6 +378,7 @@
     <MESSAGE value="profile_Dialogs_done(49)" />
     <MESSAGE value="type_is_done_not_state" />
     <MESSAGE value="add_initial_state_users_reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_initial_state_users_reducer" />
+    <MESSAGE value="add_initial_right_state_for_users" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_initial_right_state_for_users" />
   </component>
 </project>

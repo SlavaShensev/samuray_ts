@@ -1,3 +1,16 @@
+type UserType = {
+    id: number
+    fullName: string
+    followed: boolean
+    status: string
+    location: {city: string, country: string}
+}
+
+type InitialStateType = {
+    users: UserType[]
+}
+
+
 const initialState: InitialStateType = {
     users: [
         {
@@ -24,7 +37,7 @@ const initialState: InitialStateType = {
     ],
 }
 
-export const dialogsReducer = (state: DialogsPageType = initialState,
+export const usersReducer = (state: DialogsPageType = initialState,
                                action: ActionsType): DialogsPageType => {
     switch (action.type) {
         case 'ADD-MESSAGE':
