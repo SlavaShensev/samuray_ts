@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -136,7 +135,8 @@
       <workItem from="1613815413055" duration="64000" />
       <workItem from="1613815513766" duration="46077000" />
       <workItem from="1615746200322" duration="16009000" />
-      <workItem from="1615803558461" duration="5071000" />
+      <workItem from="1615803558461" duration="14773000" />
+      <workItem from="1615832330665" duration="228000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -362,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615798349758</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="typing_connect">
+      <created>1615821572101</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615821572101</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +389,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25_TS_map_MyPosts" />
     <MESSAGE value="29_TS_Types_Profile_Dialogs" />
     <MESSAGE value="30_add_state_add_storiesBook" />
     <MESSAGE value="32_add_textarea_button_in_Message_and_Profile_add_addPost-fn_state" />
@@ -407,6 +413,7 @@
     <MESSAGE value="add_types_initial_state_users" />
     <MESSAGE value="add_cases_follow_unfollow" />
     <MESSAGE value="add_cases_Set_Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_cases_Set_Users" />
+    <MESSAGE value="typing_connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="typing_connect" />
   </component>
 </project>
