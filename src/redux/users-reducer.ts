@@ -1,4 +1,4 @@
-type UserType = {
+export type UserType = {
     id: number
     fullName: string
     followed: boolean
@@ -73,21 +73,21 @@ type TypeUnfollowAC = ReturnType<typeof unfollowAC>
 type TypeSetUsersAC = ReturnType<typeof setUsersAC>
 type ActionsType = TypeFollowAC | TypeUnfollowAC | TypeSetUsersAC
 
-const followAC = (userID: number) => {
+export const followAC = (userID: number) => {
     return {
         type: 'FOLLOW',
         userID
     } as const
 }
 
-const unfollowAC = (userID: number) => {
+export const unfollowAC = (userID: number) => {
     return {
         type: 'UNFOLLOW',
         userID
     } as const
 }
 
-const setUsersAC = (users: UserType[]) => {
+export const setUsersAC = (users: UserType[]) => {
     return {
         type: 'SET_USERS',
         users

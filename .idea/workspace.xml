@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +34,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -49,11 +55,11 @@
       <recent name="E:\Work\Projects\online IT kamasutra\samuray" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Users" />
       <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\redux" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\redux" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +135,8 @@
       <workItem from="1613815051058" duration="315000" />
       <workItem from="1613815413055" duration="64000" />
       <workItem from="1613815513766" duration="46077000" />
-      <workItem from="1615746200322" duration="11234000" />
+      <workItem from="1615746200322" duration="16009000" />
+      <workItem from="1615803558461" duration="5071000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -348,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615797580327</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add_cases_Set_Users">
+      <created>1615798349758</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1615798349758</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +382,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="25_TS_map_Dialogs" />
     <MESSAGE value="25_TS_map_MyPosts" />
     <MESSAGE value="29_TS_Types_Profile_Dialogs" />
     <MESSAGE value="30_add_state_add_storiesBook" />
@@ -393,6 +406,7 @@
     <MESSAGE value="add_initial_right_state_for_users" />
     <MESSAGE value="add_types_initial_state_users" />
     <MESSAGE value="add_cases_follow_unfollow" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_cases_follow_unfollow" />
+    <MESSAGE value="add_cases_Set_Users" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_cases_Set_Users" />
   </component>
 </project>
