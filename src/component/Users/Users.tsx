@@ -24,6 +24,11 @@ export default class Users extends React.Component<UsersPropsType, StateType> {
 
     render() {
         return <div>
+            <span>1</span>
+            <span>2</span>
+            <span className={styles.selectedPage} >3</span>
+            <span>4</span>
+            <span>5</span>
             {
                 this.props.users.map(u => <div key={u.id}>
                     <div>
