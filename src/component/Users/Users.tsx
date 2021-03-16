@@ -11,13 +11,11 @@ type UsersPropsType = {
     setUsers: (users: UserType[]) => void
 }
 
-type StateType = {
-
-}
+type StateType = {}
 
 export default class Users extends React.Component<UsersPropsType, StateType> {
 
-    getUsers = () => {
+    componentDidMount(): void {
         axios.get('https://social-network.samuraijs.com/api/1.0/users')
             .then(response => {
                 this.props.setUsers(response.data.items)
@@ -26,8 +24,6 @@ export default class Users extends React.Component<UsersPropsType, StateType> {
 
     render() {
         return <div>
-            <button onClick={this.getUsers}> get users
-            </button>
             {
                 this.props.users.map(u => <div key={u.id}>
                     <div>
