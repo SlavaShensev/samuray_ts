@@ -13,30 +13,7 @@ export type InitialStateType = {
 
 const initialState: InitialStateType = {
     users: [
-        {
-            id: 1,
-            photoUrl: 'https://s.wsj.net/public/resources/images/BN-RQ780_WORKFA_GR_20170117101111.jpg',
-            fullName: 'Slava',
-            followed: false,
-            status: ' I am a boss',
-            location: {city: 'Odessa', country: 'Ukraine'},
-        },
-        {
-            id: 2,
-            photoUrl: 'https://s.wsj.net/public/resources/images/BN-RQ780_WORKFA_GR_20170117101111.jpg',
-            followed: true,
-            fullName: 'Sasha',
-            status: ' I am a boss too',
-            location: {city: 'Kiev', country: 'Ukraine'},
-        },
-        {
-            id: 3,
-            photoUrl: 'https://s.wsj.net/public/resources/images/BN-RQ780_WORKFA_GR_20170117101111.jpg',
-            followed: false,
-            fullName: 'Sergey',
-            status: ' I am a big boss',
-            location: {city: 'Moscow', country: 'Russia'},
-        },
+
     ],
 }
 
