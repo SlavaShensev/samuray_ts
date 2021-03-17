@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,7 +135,7 @@
       <workItem from="1615746200322" duration="16009000" />
       <workItem from="1615803558461" duration="14773000" />
       <workItem from="1615832330665" duration="19651000" />
-      <workItem from="1615906154826" duration="23716000" />
+      <workItem from="1615906154826" duration="27674000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615919423504</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="add_pagination_not-request">
+      <created>1615985758328</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1615985758328</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="33_add_Post_on_wall" />
     <MESSAGE value="34_flux_add_post_on_wall_from_state" />
     <MESSAGE value="add_my_store_whitout_type" />
     <MESSAGE value="type_store" />
@@ -442,6 +447,7 @@
     <MESSAGE value="users-class" />
     <MESSAGE value="add_didMound_users" />
     <MESSAGE value="adding_pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding_pagination" />
+    <MESSAGE value="add_pagination_not-request" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_pagination_not-request" />
   </component>
 </project>
