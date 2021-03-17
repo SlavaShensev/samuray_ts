@@ -2,7 +2,7 @@ import {AppStateType} from "../../redux/redux-store";
 import {followAC, setCurrentPageAC, setUsersAC, setUsersTotalCountAC, unfollowAC, UserType} from "../../redux/users-reducer"
 import {Dispatch} from 'redux';
 import {connect} from "react-redux";
-import Users from "./Users";
+import UsersAIPComponent from "./UsersAIPComponent";
 
 export type MapDispatchToPropsType = {
     users: Array<UserType>
@@ -54,6 +54,6 @@ const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
 
 // export default connect<MapDispatchToPropsType, any, {}, AppStateType>(mapStateToProps, mapDispatchToProps)(Users);
 // const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(Users)
-const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(Users)
+const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(UsersAIPComponent)
 
 export default UsersContainer
