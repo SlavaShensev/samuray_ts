@@ -6,9 +6,13 @@ import {UserType} from "../../redux/users-reducer";
 
 type UsersPropsType = {
     users: Array<any>
+    pageSize: number
+    totalUserCount: number
+    currentPage: number
     follow: (userID: number) => void
     unfollow: (userID: number) => void
     setUsers: (users: UserType[]) => void
+    setCurrentPage: (currentPage: number) => void
 }
 
 type StateType = {}
@@ -16,19 +20,29 @@ type StateType = {}
 export default class Users extends React.Component<UsersPropsType, StateType> {
 
     componentDidMount(): void {
-        axios.get('https://social-network.samuraijs.com/api/1.0/users')
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+        // https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}
             .then(response => {
                 this.props.setUsers(response.data.items)
             })
     }
 
     render() {
+        const pagesCount = this.props.totalUserCount / this.props.pageSize
+        const pages = []
+        for (let i = 1; i < pagesCount; i++) {
+            pages.push(i)
+        }
         return <div>
-            <span>1</span>
-            <span>2</span>
-            <span className={styles.selectedPage} >3</span>
-            <span>4</span>
-            <span>5</span>
+            {pages.map(p => {
+                return (
+                    <span
+                        onClick={() => {
+                            return this.props.setCurrentPage(p)
+                        }}
+                        className={this.props.currentPage === p ? styles.selectedPage : ''}>{p}</span>
+                )
+            })}
             {
                 this.props.users.map(u => <div key={u.id}>
                     <div>

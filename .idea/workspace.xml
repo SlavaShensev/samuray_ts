@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +136,7 @@
       <workItem from="1615746200322" duration="16009000" />
       <workItem from="1615803558461" duration="14773000" />
       <workItem from="1615832330665" duration="19651000" />
-      <workItem from="1615906154826" duration="9010000" />
+      <workItem from="1615906154826" duration="23716000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -386,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615915239690</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="adding_pagination">
+      <created>1615919423504</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1615919423504</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="32_add_fn_addPost_in_state_typing_for_addPost" />
     <MESSAGE value="33_add_Post_on_wall" />
     <MESSAGE value="34_flux_add_post_on_wall_from_state" />
     <MESSAGE value="add_my_store_whitout_type" />
@@ -431,6 +441,7 @@
     <MESSAGE value="add_users_on_wall_and_follow_button" />
     <MESSAGE value="users-class" />
     <MESSAGE value="add_didMound_users" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_didMound_users" />
+    <MESSAGE value="adding_pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding_pagination" />
   </component>
 </project>
