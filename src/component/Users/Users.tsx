@@ -1,5 +1,5 @@
 import React from "react";
-import userPhoto from "../../assets/img/user.jpg";
+import userPhoto from "../../assets/img/users-icon.png";
 import styles from "./users.module.css";
 
 type UserPropsType = {
