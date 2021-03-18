@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/common/Preloader/Preloader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +138,7 @@
       <workItem from="1616003236963" duration="5433000" />
       <workItem from="1616012741849" duration="7941000" />
       <workItem from="1616020968767" duration="6490000" />
-      <workItem from="1616056925374" duration="2500000" />
+      <workItem from="1616056925374" duration="3016000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -427,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616055085887</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add_preloader_done">
+      <created>1616060601115</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1616060601115</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bind_addPost_updateNewPostText" />
     <MESSAGE value="37_done" />
     <MESSAGE value="add_dispatch_and_type_refactoring_Profile" />
     <MESSAGE value="add_dispatch_done_and_start_create_dispatchCreator" />
@@ -472,6 +478,7 @@
     <MESSAGE value="add_pagination_request_on_server" />
     <MESSAGE value="add_UsersAIPComponent" />
     <MESSAGE value="add_preloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_preloader" />
+    <MESSAGE value="add_preloader_done" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_preloader_done" />
   </component>
 </project>

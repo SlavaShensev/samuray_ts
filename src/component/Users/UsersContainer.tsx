@@ -13,6 +13,7 @@ import React from "react";
 import axios from "axios";
 import Users from "./Users";
 import preloader from '../../assets/img/preloader.gif'
+import Preloader from "../common/Preloader/Preloader";
 
 export type MapStateToPropsType = {
     users: Array<UserType>
@@ -62,13 +63,7 @@ class UsersContainer extends React.Component<UsersContainerPropsType, StateType>
 
     render() {
         return <>
-            {this.props.isFetching ?
-                <div style={{backgroundColor: 'red'}} >
-                    <img src={preloader}
-                         style={ {height: '30px'} }
-                    />
-                </div>
-                : null}
+            {this.props.isFetching ? <Preloader/> : null}
             <Users
                 users={this.props.users}
                 currentPage={this.props.currentPage}
