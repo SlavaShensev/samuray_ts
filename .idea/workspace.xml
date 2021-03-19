@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/common/Preloader/Preloader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
@@ -138,7 +137,7 @@
       <workItem from="1616003236963" duration="5433000" />
       <workItem from="1616012741849" duration="7941000" />
       <workItem from="1616020968767" duration="6490000" />
-      <workItem from="1616056925374" duration="3016000" />
+      <workItem from="1616056925374" duration="7165000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -434,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616060601115</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="add_preloader_in_component">
+      <created>1616061266429</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1616061266429</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="37_done" />
     <MESSAGE value="add_dispatch_and_type_refactoring_Profile" />
     <MESSAGE value="add_dispatch_done_and_start_create_dispatchCreator" />
     <MESSAGE value="add_message_on_wall_in_messages" />
@@ -479,6 +484,7 @@
     <MESSAGE value="add_UsersAIPComponent" />
     <MESSAGE value="add_preloader" />
     <MESSAGE value="add_preloader_done" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_preloader_done" />
+    <MESSAGE value="add_preloader_in_component" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_preloader_in_component" />
   </component>
 </project>
