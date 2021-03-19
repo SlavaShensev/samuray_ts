@@ -1,4 +1,5 @@
 import {connect} from "react-redux";
+import React from "react";
 import Profile from './Profile';
 import {AppStateType} from "../../redux/redux-store";
 import {Dispatch} from "redux";
@@ -16,6 +17,16 @@ type TypeMapDispatchToProps = {
     updateNewText: (newPost: string) => void
 }
 
+class ProfileContainer extends React.Component {
+    render() {
+        return <>
+            <Profile addPost={this.props.addPost}
+                     updateNewText={}
+                     posts={}
+                     newPostText={}/>
+        </>
+    }
+}
 
 const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     return {
@@ -35,6 +46,4 @@ const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
     }
 }
 
-const ProfileContainer = connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType>(mapStateToProps, mapDispatchToProps)(Profile)
-
-export default ProfileContainer
+export default connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType>(mapStateToProps, mapDispatchToProps)(ProfileContainer)
