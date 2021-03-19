@@ -1,10 +1,10 @@
 import {AppStateType} from "../../redux/redux-store";
 import {
-    followAC,
-    setCurrentPageAC,
-    setUsersAC,
-    setUsersTotalCountAC, toggleIsFetchingAC,
-    unfollowAC,
+    follow,
+    setCurrentPage,
+    setUsers,
+    setUsersTotalCount, toggleIsFetching,
+    unfollow,
     UserType
 } from "../../redux/users-reducer"
 import {connect} from "react-redux";
@@ -30,7 +30,7 @@ export type TypeMapDispatchToProps = {
     unfollow: (userID: number) => void
     setUsers: (users: UserType[]) => void
     setCurrentPage: (pageNumber: number) => void
-    setTotalUsersCount: (totalCount: number) => void
+    setUsersTotalCount: (totalCount: number) => void
     toggleIsFetching: (isFetching: boolean) => void
 }
 
@@ -45,7 +45,7 @@ class UsersContainer extends React.Component<UsersContainerPropsType, StateType>
             .then(response => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(response.data.items)
-                this.props.setTotalUsersCount(response.data.totalCount)
+                this.props.setUsersTotalCount(response.data.totalCount)
             })
     }
 
@@ -90,10 +90,6 @@ const mapStateToProps = (state: AppStateType): MapStateToPropsType => {
 // const UsersContainer = connect(mapStateToProps, mapDispatchToProps)(Users)
 
 export default connect(mapStateToProps, {
-    follow: followAC,
-    unfollow: unfollowAC,
-    setUsers: setUsersAC,
-    setCurrentPage: setCurrentPageAC,
-    setTotalUsersCount: setUsersTotalCountAC,
-    toggleIsFetching: toggleIsFetchingAC,
+    follow, unfollow, setUsers,
+    setCurrentPage, setUsersTotalCount, toggleIsFetching,
 })(UsersContainer)

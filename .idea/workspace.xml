@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,8 @@
       <workItem from="1616003236963" duration="5433000" />
       <workItem from="1616012741849" duration="7941000" />
       <workItem from="1616020968767" duration="6490000" />
-      <workItem from="1616056925374" duration="7165000" />
+      <workItem from="1616056925374" duration="7551000" />
+      <workItem from="1616139373479" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -440,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616061266429</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="delete_mapStateToProps">
+      <created>1616139058514</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1616139058515</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_dispatch_and_type_refactoring_Profile" />
     <MESSAGE value="add_dispatch_done_and_start_create_dispatchCreator" />
     <MESSAGE value="add_message_on_wall_in_messages" />
     <MESSAGE value="add_reducers_(41)" />
@@ -485,6 +493,7 @@
     <MESSAGE value="add_preloader" />
     <MESSAGE value="add_preloader_done" />
     <MESSAGE value="add_preloader_in_component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_preloader_in_component" />
+    <MESSAGE value="delete_mapStateToProps" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete_mapStateToProps" />
   </component>
 </project>
