@@ -12,6 +12,9 @@ const ProfileInfo = (props: ProfileInfoType) => {
     if (!props.title) {
         return <Preloader/>
     }
+
+
+
     return (
         <div>
             <div>

@@ -4,12 +4,10 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +142,8 @@
       <workItem from="1616020968767" duration="6490000" />
       <workItem from="1616056925374" duration="7551000" />
       <workItem from="1616139373479" duration="389000" />
-      <workItem from="1616231042307" duration="7851000" />
+      <workItem from="1616231042307" duration="19230000" />
+      <workItem from="1616269891593" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -461,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616146655849</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add_User_from_server_&amp;_preloader_in_profile">
+      <created>1616243271111</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1616243271111</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +487,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_message_on_wall_in_messages" />
     <MESSAGE value="add_reducers_(41)" />
     <MESSAGE value="add_reducers_and_typing_(41)" />
     <MESSAGE value="add_redux_done_dialogs" />
@@ -506,6 +511,7 @@
     <MESSAGE value="add_preloader_in_component" />
     <MESSAGE value="delete_mapStateToProps" />
     <MESSAGE value="add_ProfileComponents" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_ProfileComponents" />
+    <MESSAGE value="add_User_from_server_&amp;_preloader_in_profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_User_from_server_&amp;_preloader_in_profile" />
   </component>
 </project>

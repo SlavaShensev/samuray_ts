@@ -5,6 +5,7 @@ import {AppStateType} from "../../redux/redux-store";
 import {Dispatch} from "redux";
 import {addPostAC, PostType, setUserProfileAC, updateNewTextAC} from "../../redux/profile-reducer";
 import axios from "axios";
+import {RouteComponentProps, withRouter } from "react-router-dom";
 
 type OwnProps = {}
 
@@ -19,16 +20,26 @@ type TypeMapDispatchToProps = {
     addPost: (postText: string) => void
     updateNewText: (newPost: string) => void
     setUsersProfile: (users: string) => void
-
 }
 
-type ProfileContainerPropsType = TypeMapDispatchToProps & TypeMapStateToProps
+type PropsType = TypeMapDispatchToProps & TypeMapStateToProps
+
+type PathParamsType = {
+    userID: string
+}
+
+type ComonProfileContainerPropsType = RouteComponentProps<PathParamsType> & PropsType
 
 type ProfileContainerStateType = {}
 
-class ProfileContainer extends React.Component <ProfileContainerPropsType, ProfileContainerStateType> {
+class ProfileContainer extends React.Component <ComonProfileContainerPropsType> {
     componentDidMount(): void {
-        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/2`)
+        debugger
+        let userId = this.props.match.params.userID
+        if(!userId) {
+            userId = '2'
+        }
+        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/` + userId)
             .then(response => {
                 this.props.setUsersProfile(response.data)
             })
@@ -67,4 +78,6 @@ const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
     }
 }
 
-export default connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType>(mapStateToProps, mapDispatchToProps)(ProfileContainer)
+    const withUrlDataContainerComponent = withRouter(ProfileContainer)
+
+export default connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType>(mapStateToProps, mapDispatchToProps)(withUrlDataContainerComponent)

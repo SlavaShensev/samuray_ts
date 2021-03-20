@@ -16,9 +16,15 @@ const App = () => {
             <Header/>
             <Navbar/>
             <div className='appWrapperContent'>
-                <Route path={'/dialogs'} render={() => <DialogsContainer/>}/>
-                <Route path={'/profile'} render={() => <ProfileContainer/>}/>
-                <Route path={'/users'} render={() => <UsersContainer/>}/>
+                <Route path={'/dialogs'}
+                       render={() => <DialogsContainer/>}
+                />
+                <Route path={'/profile/:userId'}
+                       render={() => <ProfileContainer/>}
+                />
+                <Route path={'/users'}
+                       render={() => <UsersContainer/>}
+                />
                 <Route path={'/news'} component={Music}/>
                 <Route path={'/music'} component={News}/>
                 <Route path={'/setting'} component={Setting}/>
