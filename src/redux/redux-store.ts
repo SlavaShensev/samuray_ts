@@ -9,7 +9,10 @@ const redusersBatch = combineReducers({
     usersPage: usersReducer
 })
 
-let store = createStore(redusersBatch)
+const store = createStore(redusersBatch)
+
+// @ts-ignore
+window.store = store
 
 export type AppStateType = ReturnType< typeof redusersBatch>
 
