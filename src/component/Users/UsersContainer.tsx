@@ -53,6 +53,7 @@ class UsersContainer extends React.Component<UsersContainerPropsType, UsersConta
         this.props.setCurrentPage(pageNumber)
         this.props.toggleIsFetching(true)
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`)
+
             .then(response => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(response.data.items)
@@ -60,6 +61,7 @@ class UsersContainer extends React.Component<UsersContainerPropsType, UsersConta
     }
 
     render() {
+
         return <>
             {this.props.isFetching ? <Preloader/> : null}
             <Users
