@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/API/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,6 +19,7 @@
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -146,14 +147,7 @@
       <workItem from="1616323893466" duration="2427000" />
       <workItem from="1616667957357" duration="1086000" />
       <workItem from="1616925686721" duration="38000" />
-      <workItem from="1617188303400" duration="22158000" />
-    </task>
-    <task id="LOCAL-00001" summary="add_dialogs">
-      <created>1610789141746</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1610789141747</updated>
+      <workItem from="1617188303400" duration="26525000" />
     </task>
     <task id="LOCAL-00002" summary="add_active_class">
       <created>1610879477914</created>
@@ -491,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617215540264</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add_follow_unFollow">
+      <created>1617219191876</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617219191877</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_profileReduser_and_add_ProfileContainer" />
     <MESSAGE value="profile_Dialogs_done(49)" />
     <MESSAGE value="type_is_done_not_state" />
     <MESSAGE value="add_initial_state_users_reducer" />
@@ -536,6 +536,7 @@
     <MESSAGE value="add_withRouter_for_profileContainer" />
     <MESSAGE value="go_to_user" />
     <MESSAGE value="add_login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_login" />
+    <MESSAGE value="add_follow_unFollow" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_follow_unFollow" />
   </component>
 </project>
