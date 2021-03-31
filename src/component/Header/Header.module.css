@@ -1,5 +1,5 @@
 .header {
-    background: #00cb00;
+    background: #58cb43;
     grid-area: h;
 }
 
@@ -7,3 +7,7 @@
     width: 50px;
 }
 
+.loginBlock {
+    float: right;
+
+}

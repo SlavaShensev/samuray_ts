@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/Header/HeaderContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +34,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/Header" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -44,19 +47,19 @@
     <property name="ts.external.directory.path" value="E:\Work\Projects\online_IT_kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Header" />
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\redux" />
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Users" />
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\redux" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts\Post" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Users" />
-      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\redux" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\redux" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -147,7 +150,7 @@
       <workItem from="1616323893466" duration="2427000" />
       <workItem from="1616667957357" duration="1086000" />
       <workItem from="1616925686721" duration="38000" />
-      <workItem from="1617188303400" duration="8336000" />
+      <workItem from="1617188303400" duration="18651000" />
     </task>
     <task id="LOCAL-00001" summary="add_dialogs">
       <created>1610789141746</created>
@@ -478,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616270761330</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="go_to_user">
+      <created>1617201364178</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1617201364179</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_reducers_and_typing_(41)" />
     <MESSAGE value="add_redux_done_dialogs" />
     <MESSAGE value="add_profileReduser_and_add_ProfileContainer" />
     <MESSAGE value="profile_Dialogs_done(49)" />
@@ -523,6 +532,7 @@
     <MESSAGE value="add_ProfileComponents" />
     <MESSAGE value="add_User_from_server_&amp;_preloader_in_profile" />
     <MESSAGE value="add_withRouter_for_profileContainer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_withRouter_for_profileContainer" />
+    <MESSAGE value="go_to_user" />
+    <option name="LAST_COMMIT_MESSAGE" value="go_to_user" />
   </component>
 </project>
