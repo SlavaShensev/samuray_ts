@@ -94,7 +94,7 @@ const Users = (props: UserPropsType) => {
                         {'u.location.city'}
                     </div>
                 </div>)
-            })
+            }
         </div>
     )
 }

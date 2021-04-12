@@ -33,6 +33,7 @@ export type TypeMapDispatchToProps = {
     setCurrentPage: (pageNumber: number) => void
     setUsersTotalCount: (totalCount: number) => void
     followingInProgress: (isFetching: boolean) => void
+    toggleIsFetching: (value: boolean)=>void
 }
 
 export type UsersContainerPropsType = MapStateToPropsType & TypeMapDispatchToProps
@@ -42,21 +43,25 @@ type UsersContainerStateType = {}
 class UsersContainer extends React.Component<UsersContainerPropsType, UsersContainerStateType> {
     componentDidMount() {
         this.props.followingInProgress(true)
+        this.props.toggleIsFetching(true)
 
         getUsers(this.props.currentPage, this.props.pageSize).then(data => {
             this.props.followingInProgress(false)
             this.props.setUsers(data.items)
             this.props.setUsersTotalCount(data.totalCount)
+            this.props.toggleIsFetching(false)
         })
     }
 
     onPageChanged = (pageNumber: number) => {
+        this.props.toggleIsFetching(true)
         this.props.setCurrentPage(pageNumber)
         this.props.followingInProgress(true)
 
         getUsers(this.props.currentPage, this.props.pageSize).then(data => {
             this.props.followingInProgress(false)
             this.props.setUsers(data.items)
+            this.props.toggleIsFetching(false)
         })
     }
 
