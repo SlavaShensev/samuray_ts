@@ -9,14 +9,13 @@ export type UserType = {
     status: string,
     followed: boolean
 }
-
 export type InitialStateType = {
     users: UserType[]
     pageSize: number
     totalUsersCount: number
     currentPage: number
     isFetching: boolean
-    followingInProgress: boolean
+    followingInProgress: any //todo
 }
 
 const initialState: InitialStateType = {
@@ -25,8 +24,7 @@ const initialState: InitialStateType = {
     totalUsersCount: 0,
     currentPage: 1,
     isFetching: true,
-    followingInProgress: false,
-
+    followingInProgress: [],
 }
 
 export const usersReducer = (state: InitialStateType = initialState,
@@ -75,7 +73,9 @@ export const usersReducer = (state: InitialStateType = initialState,
         case "TOGGLE_IS_FOLLOWING_PROGRESS":
             return {
                 ...state,
-             followingInProgress: action.followInProgress
+                followingInProgress: action.followInProgress
+                    ? [...state.followingInProgress, action.userID]
+                    : state.followingInProgress.filter((id: string) => id !== action.userID)
             }
         default:
             return state
@@ -99,45 +99,40 @@ export const follow = (userID: number) => {
         userID
     } as const
 }
-
 export const unfollow = (userID: number) => {
     return {
         type: 'UNFOLLOW',
         userID
     } as const
 }
-
 export const setUsers = (users: UserType[]) => {
     return {
         type: 'SET_USERS',
         users
     } as const
 }
-
 export const setCurrentPage = (currentPage: number) => {
     return {
         type: 'SET_CURRENT_PAGE',
         currentPage
     } as const
 }
-
 export const setUsersTotalCount = (totalUsersCount: number) => {
     return {
         type: 'SET_TOTAL_USERS_COUNT',
         totalUsersCount
     } as const
 }
-
 export const toggleIsFetching = (isFetching: boolean) => {
     return {
         type: 'TOGGLE_IS_FETCHING',
         isFetching
     } as const
 }
-
-export const followingInProgress = (followInProgress: boolean) => {
+export const followingInProgress = (followInProgress: boolean, userID: string) => {
     return {
         type: 'TOGGLE_IS_FOLLOWING_PROGRESS',
-        followInProgress
+        followInProgress,
+        userID
     } as const
 }

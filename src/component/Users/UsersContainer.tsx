@@ -19,7 +19,7 @@ export type MapStateToPropsType = {
     totalUserCount: number
     currentPage: number
     isFetching: boolean
-    followingInProgressState: boolean
+    followingInProgressState: []
 }
 
 type TOwnPropsType = {
@@ -32,7 +32,7 @@ export type TypeMapDispatchToProps = {
     setUsers: (users: UserType[]) => void
     setCurrentPage: (pageNumber: number) => void
     setUsersTotalCount: (totalCount: number) => void
-    followingInProgress: (isFetching: boolean) => void
+    followingInProgress: (isFetching: boolean, id?: any) => void // need to fix todo
     toggleIsFetching: (value: boolean) => void
 }
 
