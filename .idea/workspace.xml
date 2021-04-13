@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="E:\Work\Projects\online_IT_kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -148,13 +150,6 @@
       <workItem from="1616925686721" duration="38000" />
       <workItem from="1617188303400" duration="29320000" />
       <workItem from="1617257818507" duration="5591000" />
-    </task>
-    <task id="LOCAL-00003" summary="23-start_Dialogs">
-      <created>1610919331785</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1610919331785</updated>
     </task>
     <task id="LOCAL-00004" summary="refactoring_dialogs_add_component">
       <created>1610998992808</created>
@@ -492,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617223482032</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="fix_preloader">
+      <created>1618263902352</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1618263902353</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="type_is_done_not_state" />
     <MESSAGE value="add_initial_state_users_reducer" />
     <MESSAGE value="add_initial_right_state_for_users" />
     <MESSAGE value="add_types_initial_state_users" />
@@ -537,6 +538,7 @@
     <MESSAGE value="add_login" />
     <MESSAGE value="add_follow_unFollow" />
     <MESSAGE value="add_DAL_API-getUsers()" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_DAL_API-getUsers()" />
+    <MESSAGE value="fix_preloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix_preloader" />
   </component>
 </project>

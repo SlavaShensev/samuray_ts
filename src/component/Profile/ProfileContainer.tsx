@@ -28,16 +28,16 @@ type PathParamsType = {
     userId: string
 }
 
-type ComonProfileContainerPropsType = RouteComponentProps<PathParamsType> & PropsType
+type CommonProfileContainerPropsType = RouteComponentProps<PathParamsType> & PropsType
 
 type ProfileContainerStateType = {}
 
-class ProfileContainer extends React.Component <ComonProfileContainerPropsType> {
+class ProfileContainer extends React.Component <CommonProfileContainerPropsType> {
     componentDidMount(): void {
 
         let userId = this.props.match.params.userId
         if (!userId) {
-            userId = '2'
+            userId = '1'
         }
         axios.get(`https://social-network.samuraijs.com/api/1.0/profile/` + userId)
             .then(response => {
