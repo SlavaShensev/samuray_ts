@@ -84,8 +84,8 @@ export const usersReducer = (state: InitialStateType = initialState,
     }
 }
 
-type TypeFollowAC = ReturnType<typeof follow>
-type TypeUnfollowAC = ReturnType<typeof unfollow>
+type TypeFollowAC = ReturnType<typeof followSuccess>
+type TypeUnfollowAC = ReturnType<typeof unfollowSuccess>
 type TypeSetUsersAC = ReturnType<typeof setUsers>
 type TypeSetCurrentPageAC = ReturnType<typeof setCurrentPage>
 type TypeSetUsersTotalCountAC = ReturnType<typeof setUsersTotalCount>
@@ -95,13 +95,13 @@ type ActionsType = TypeFollowAC | TypeUnfollowAC
     | TypeSetUsersAC | TypeSetCurrentPageAC
     | TypeSetUsersTotalCountAC | TypeToggleIsFetchingAC
     | TypeFollowingInProgressAC
-export const follow = (userID: number) => {
+export const followSuccess = (userID: number) => {
     return {
         type: 'FOLLOW',
         userID
     } as const
 }
-export const unfollow = (userID: number) => {
+export const unfollowSuccess = (userID: number) => {
     return {
         type: 'UNFOLLOW',
         userID
@@ -139,13 +139,9 @@ export const followingInProgress = (followInProgress: boolean, userID?: string) 
     } as const
 } // todo--usererID ?
 
-export type TypeGetUsersThunkCreator = ReturnType<typeof getUsersThunkCreator>
-
 export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispatch: any) => {
-
     dispatch(followingInProgress(true))
     dispatch(toggleIsFetching(true))
-
     usersAPI.getUsers(currentPage, pageSize).then(data => {
         dispatch(followingInProgress(false))
         dispatch(setUsers(data.items))
@@ -153,3 +149,32 @@ export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispat
         dispatch(toggleIsFetching(false))
     })
 }
+
+export const followButton = (userId: any) => (dispatch: any) => { //todo type userId dispatch
+    dispatch(followingInProgress(true, userId))
+    usersAPI.follow(userId).then(response => {
+        if (response.data.resultCode === 0) {
+            dispatch(followSuccess(userId))
+        }
+        dispatch(followingInProgress(false, userId))
+    })
+}
+
+export const unFollowButton = (userId: any) => (dispatch: any) => { //todo type userId dispatch
+   dispatch(followingInProgress(true, userId))
+    usersAPI.unFollow(userId).then(response => {
+        if (response.data.resultCode === 0) {
+            dispatch(unfollowSuccess(userId))
+        }
+       dispatch(followingInProgress(false, userId))
+    })
+}
+
+
+
+
+
+
+
+
+

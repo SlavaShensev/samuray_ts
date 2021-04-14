@@ -1,9 +1,9 @@
 import {AppStateType} from "../../redux/redux-store";
 import {
-    follow, followingInProgress, getUsersThunkCreator,
+    followSuccess, followingInProgress, getUsersThunkCreator,
     setCurrentPage,
-    unfollow,
-    UserType
+    unfollowSuccess,
+    UserType, followButton, unFollowButton
 } from "../../redux/users-reducer"
 import {connect} from "react-redux";
 import React from "react";
@@ -22,10 +22,10 @@ export type MapStateToPropsType = {
 //     users: UserType[]
 // }
 export type TypeMapDispatchToProps = {
-    follow: (userID: number) => void
-    unfollow: (userID: number) => void
     followingInProgress: (isFetching: boolean, id?: any) => void // need to fix todo
     getUsersThunkCreator: any// todo
+    followButton: any // todo
+    unFollowButton: any // todo
 }
 export type UsersContainerPropsType = MapStateToPropsType & TypeMapDispatchToProps
 type UsersContainerStateType = {}
@@ -45,8 +45,8 @@ class UsersContainer extends React.Component<UsersContainerPropsType, UsersConta
             <Users
                 users={this.props.users}
                 currentPage={this.props.currentPage}
-                follow={this.props.follow}
-                unfollow={this.props.unfollow}
+                followButton={this.props.followButton}
+                unFollowButton={this.props.unFollowButton}
                 pageSize={this.props.pageSize}
                 totalUserCount={this.props.totalUserCount}
                 onPageChanged={this.onPageChanged}
@@ -68,8 +68,9 @@ const mapStateToProps = (state: AppStateType): MapStateToPropsType => {
     }
 };
 export default connect(mapStateToProps, {
-    follow, unfollow,
     setCurrentPage,
     followingInProgress,
-    getUsersThunkCreator
+    getUsersThunkCreator,
+    followButton,
+    unFollowButton
 })(UsersContainer)
