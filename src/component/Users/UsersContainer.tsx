@@ -11,7 +11,6 @@ import {connect} from "react-redux";
 import React from "react";
 import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
-import {usersAPI} from "../../API/api";
 
 export type MapStateToPropsType = {
     users: Array<UserType>
@@ -44,19 +43,11 @@ type UsersContainerStateType = {}
 
 class UsersContainer extends React.Component<UsersContainerPropsType, UsersContainerStateType> {
     componentDidMount() {
-        this.props.getUsersThunkCreator()
+        this.props.getUsersThunkCreator(this.props.currentPage, this.props.pageSize)
     }
 
     onPageChanged = (pageNumber: number) => {
-        this.props.toggleIsFetching(true)
-        this.props.setCurrentPage(pageNumber)
-        this.props.followingInProgress(true)
-
-        usersAPI.getUsers(this.props.currentPage, this.props.pageSize).then(data => {
-            this.props.followingInProgress(false)
-            this.props.setUsers(data.items)
-            this.props.toggleIsFetching(false)
-        })
+        this.props.getUsersThunkCreator(pageNumber, this.props.pageSize)
     }
 
     render() {
