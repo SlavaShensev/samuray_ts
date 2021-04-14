@@ -1,3 +1,5 @@
+import {usersAPI} from "../API/api";
+
 export type UserType = {
     name: string,
     id: number,
@@ -91,8 +93,8 @@ type TypeToggleIsFetchingAC = ReturnType<typeof toggleIsFetching>
 type TypeFollowingInProgressAC = ReturnType<typeof followingInProgress>
 type ActionsType = TypeFollowAC | TypeUnfollowAC
     | TypeSetUsersAC | TypeSetCurrentPageAC
-    | TypeSetUsersTotalCountAC | TypeToggleIsFetchingAC | TypeFollowingInProgressAC
-
+    | TypeSetUsersTotalCountAC | TypeToggleIsFetchingAC
+    | TypeFollowingInProgressAC
 export const follow = (userID: number) => {
     return {
         type: 'FOLLOW',
@@ -129,10 +131,25 @@ export const toggleIsFetching = (isFetching: boolean) => {
         isFetching
     } as const
 }
-export const followingInProgress = (followInProgress: boolean, userID: string) => {
+export const followingInProgress = (followInProgress: boolean, userID?: string) => {
     return {
         type: 'TOGGLE_IS_FOLLOWING_PROGRESS',
         followInProgress,
         userID
     } as const
+} // todo--usererID ?
+
+export type TypeGetUsersThunkCreator = ReturnType<typeof getUsersThunkCreator>
+
+export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispatch: any) => {
+
+    dispatch(followingInProgress(true))
+    dispatch(toggleIsFetching(true))
+
+    usersAPI.getUsers(currentPage, pageSize).then(data => {
+        dispatch(followingInProgress(false))
+        dispatch(setUsers(data.items))
+        dispatch(setUsersTotalCount(data.totalCount))
+        dispatch(toggleIsFetching(false))
+    })
 }
