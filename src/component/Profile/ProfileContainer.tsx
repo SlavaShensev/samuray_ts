@@ -4,7 +4,6 @@ import Profile from './Profile';
 import {AppStateType} from "../../redux/redux-store";
 import {Dispatch} from "redux";
 import {addPostAC, PostType, setUserProfileAC, updateNewTextAC} from "../../redux/profile-reducer";
-import axios from "axios";
 import {RouteComponentProps, withRouter} from "react-router-dom";
 import {usersAPI} from "../../API/api";
 
@@ -82,4 +81,6 @@ const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
 
 const WithUrlDataContainerComponent = withRouter(ProfileContainer)
 
-export default connect<TypeMapStateToProps, TypeMapDispatchToProps, OwnProps, AppStateType>(mapStateToProps, mapDispatchToProps)(WithUrlDataContainerComponent)
+export default connect<TypeMapStateToProps,
+    TypeMapDispatchToProps, OwnProps,
+    AppStateType>(mapStateToProps, mapDispatchToProps)(WithUrlDataContainerComponent)
