@@ -62,8 +62,9 @@ export const dialogsReducer = (state: DialogsPageType = initialState,
             }
             return {
                 ...state,
+                newMessage: '',
                 messages: [...state.messages, createMessage],
-                newMessage: ''
+
             }
         case 'UPDATE-NEW-MESSAGE':
             return {

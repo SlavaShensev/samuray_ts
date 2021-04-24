@@ -8,26 +8,29 @@ type DialogsPropsType = {
     messages: Array<MessageType>
     dialogs: Array<DialogType>
     newMessage: string
-    addMessage: () => void
-    updateNewMessage: (text: string) => void
+    addMessageAC: () => void
+    updateNewMessageAC: (text: string) => void
 }
 
 const Dialogs = (props: DialogsPropsType) => {
     const dialogsItem = props.dialogs
-        .map((item) => <DialogItem key={item.id} id={item.id} name={item.name}/>)
+        .map((item) => <DialogItem key={item.id}
+                                   id={item.id}
+                                   name={item.name}/>)
     const messagesItem = props.messages
-        .map((props) => <Message key={props.id} {...props}/>)
+        .map((props) => <Message key={props.id}
+                                 {...props}/>)
 
     const newMessage = React.createRef<HTMLTextAreaElement>()
 
     const addMessage = () => {
-        props.addMessage()
-        props.updateNewMessage(props.newMessage)
+        props.addMessageAC()
+        props.updateNewMessageAC(props.newMessage)
     }
 
     const onMessageChange = () => {
         const message = newMessage.current ? newMessage.current.value : '----'
-        props.updateNewMessage(message)
+        props.updateNewMessageAC(message)
     }
 
     return (
