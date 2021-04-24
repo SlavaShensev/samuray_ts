@@ -31,8 +31,10 @@ const Users = (props: UserPropsType) => {
                           className={props.currentPage === p ? styles.selectedPage : ''}>{p}</span>
                 )
             })}
+
             {
                 props.users.map(u => <div key={u.id}>
+                    {console.log(u)}
                     <div>
                         <NavLink to={'/profile/' + u.id}>
                             <img src={u.photos.small != null ? u.photos.small : userPhoto}
@@ -49,16 +51,19 @@ const Users = (props: UserPropsType) => {
                                 onClick={() => props.followButton(u.id)}>Follow</button>}
                     </div>
                     <div>
-                        {u.name}
+                        <h3>
+                            {`  User name ${u.name}`}
+                        </h3>
                     </div>
                     <div>
-                        {u.status}
+                        <h3>
+                            {`Follow for this user ${u.followed.toString()}`}
+                        </h3>
                     </div>
                     <div>
-                        {'more info: ...'}
-                    </div>
-                    <div>
-                        {'more info: ...'}
+                        <h3>
+                            {`User ID ${u.id}`}
+                        </h3>
                     </div>
                 </div>)
             }

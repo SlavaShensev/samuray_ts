@@ -8,7 +8,6 @@ type ProfileInfoType = {
 }
 
 const ProfileInfo = (props: ProfileInfoType) => {
-    console.log(props)
     if (!props.title) {
         return <Preloader/>
     }

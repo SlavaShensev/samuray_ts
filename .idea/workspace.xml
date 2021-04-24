@@ -4,8 +4,9 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,19 +47,19 @@
     <property name="ts.external.directory.path" value="E:\Work\Projects\online_IT_kamasutra\samuray\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Slava\.WebStorm2019.2\config\scratches" />
-      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Header" />
-      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\redux" />
-      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Users" />
-      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile\MyPosts\Post" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray\src" />
       <recent name="E:\Work\Projects\online IT kamasutra\samuray" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Slava\.WebStorm2019.2\config\scratches" />
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Header" />
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\redux" />
+      <recent name="E:\Work\Projects\online_IT_kamasutra\samuray\src\component\Users" />
+      <recent name="E:\Work\Projects\online IT kamasutra\samuray\src\component\Profile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -219,14 +220,7 @@
       <workItem from="1619207782453" duration="442000" />
       <workItem from="1619208282205" duration="370000" />
       <workItem from="1619208894931" duration="16900000" />
-      <workItem from="1619257067213" duration="5782000" />
-    </task>
-    <task id="LOCAL-00012" summary="32_add_fn_addPost_in_state_typing_for_addPost">
-      <created>1612387596657</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1612387596657</updated>
+      <workItem from="1619257067213" duration="8016000" />
     </task>
     <task id="LOCAL-00013" summary="33_add_Post_on_wall">
       <created>1612415884237</created>
@@ -564,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619258415717</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="ref_ProfileInfo">
+      <created>1619263196607</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1619263196607</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_didMound_users" />
     <MESSAGE value="adding_pagination" />
     <MESSAGE value="add_pagination_not-request" />
     <MESSAGE value="add_pagination_request_on_server" />
@@ -609,6 +609,7 @@
     <MESSAGE value="add_getProfile_in_API" />
     <MESSAGE value="ref_dialogs" />
     <MESSAGE value="ref_ProfileContainer" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref_ProfileContainer" />
+    <MESSAGE value="ref_ProfileInfo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref_ProfileInfo" />
   </component>
 </project>

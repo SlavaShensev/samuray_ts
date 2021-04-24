@@ -1,9 +1,11 @@
 import {AppStateType} from "../../redux/redux-store";
 import {
-    followSuccess, followingInProgress, getUsersThunkCreator,
+    followingInProgress,
+    getUsersThunkCreator,
     setCurrentPage,
-    unfollowSuccess,
-    UserType, followButton, unFollowButton
+    UserType,
+    followButton,
+    unFollowButton
 } from "../../redux/users-reducer"
 import {connect} from "react-redux";
 import React from "react";
@@ -18,9 +20,7 @@ export type MapStateToPropsType = {
     isFetching: boolean
     followingInProgressState: []
 }
-// type TOwnPropsType = {
-//     users: UserType[]
-// }
+
 export type TypeMapDispatchToProps = {
     followingInProgress: (isFetching: boolean, id?: any) => void // need to fix todo
     getUsersThunkCreator: any// todo
@@ -41,7 +41,9 @@ class UsersContainer extends React.Component<UsersContainerPropsType, UsersConta
 
     render() {
         return <>
-            {this.props.isFetching ? <Preloader/> : null}
+            {this.props.isFetching
+                ? <Preloader/>
+                : null}
             <Users
                 users={this.props.users}
                 currentPage={this.props.currentPage}
