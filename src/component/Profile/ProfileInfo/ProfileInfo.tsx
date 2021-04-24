@@ -8,7 +8,7 @@ type ProfileInfoType = {
 }
 
 const ProfileInfo = (props: ProfileInfoType) => {
-
+    console.log(props)
     if (!props.title) {
         return <Preloader/>
     }
@@ -19,7 +19,24 @@ const ProfileInfo = (props: ProfileInfoType) => {
                 <img src={bg} className={s.bg}/>
             </div>
             <div>
-                <img src={props.title.photos.large}/>
+                {props.title.photos.large
+                    ? <img src={props.title.photos.large}/>
+                    : <h5>
+                        No photo
+                    </h5>
+                }
+            </div>
+            <div>
+                <h2>
+                    User ID:
+                    { props.title.userId}
+                </h2>
+            </div>
+            <div>
+                <h2>
+                    Need work:
+                    { props.title.lookingForAJob.toString()}
+                </h2>
             </div>
         </div>
     )

@@ -2,7 +2,12 @@ import {connect} from "react-redux";
 import React from "react";
 import Profile from './Profile';
 import {AppStateType} from "../../redux/redux-store";
-import {addPostAC, PostType, setUserProfileAC, updateNewTextAC,} from "../../redux/profile-reducer";
+import {
+    addPostAC,
+    PostType,
+    setUserProfileAC,
+    updateNewTextAC
+} from "../../redux/profile-reducer";
 import {RouteComponentProps, withRouter} from "react-router-dom";
 import {usersAPI} from "../../API/api";
 
@@ -11,13 +16,6 @@ type TypeMapStateToProps = {
     newPostText: string
     profile: any
 }
-// type TypeMapDispatchToProps = {
-//     addPost: (postText: string) => void
-//     updateNewText: (newPost: string) => void
-//     setUsersProfile: (users: string) => void
-// }
-// type PropsType = TypeMapDispatchToProps & TypeMapStateToProps
-
 interface IPropsType extends TypeMapStateToProps {
     addPostAC: (postText: string) => void
     updateNewTextAC: (newPost: string) => void
@@ -42,10 +40,11 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
         if (!userId) {
             userId = '1'
         }
+
         usersAPI.getProfile(userId)
             .then(response => {
-            this.props.setUserProfileAC(response.data)
-        })
+                this.props.setUserProfileAC(response.data)
+            })
     }
 
     render() {
@@ -59,22 +58,7 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     }
 }
 
-// const mapDispatchToProps = (dispatch: Dispatch): TypeMapDispatchToProps => {
-//     return {
-//         addPost: (postText) => {
-//             dispatch(addPostAC(postText))
-//         },
-//         updateNewText: (newPost) => {
-//             dispatch(updateNewTextAC(newPost))
-//         },
-//         setUsersProfile: (users) => {
-//             dispatch(setUserProfileAC(users))
-//         }
-//     }
-// }
-
 const WithUrlDataContainerComponent = withRouter(ProfileContainer)
-
 const connector = connect(mapStateToProps, {
     addPostAC,
     updateNewTextAC,
