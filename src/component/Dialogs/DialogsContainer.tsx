@@ -24,7 +24,7 @@ const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     }
 };
 
-interface DialogsContainerType extends TypeMapStateToProps  {
+interface IDialogsContainerType extends TypeMapStateToProps  {
     messages: MessageType[]
     dialogs: DialogType[]
     newMessage: string
@@ -32,7 +32,7 @@ interface DialogsContainerType extends TypeMapStateToProps  {
     updateNewMessageAC: (text: string) => void
 }
 
-const DialogsContainer: React.FC<DialogsContainerType> = props => {
+const DialogsContainer: React.FC<IDialogsContainerType> = props => {
 
     const {
         messages,

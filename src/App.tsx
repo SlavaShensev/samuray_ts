@@ -6,9 +6,9 @@ import News from "./component/News/News";
 import Setting from "./component/Setting/Setting";
 import './App.css';
 import DialogsContainer from "./component/Dialogs/DialogsContainer";
-import ProfileContainer from "./component/Profile/ProfileContainer";
 import UsersContainer from "./component/Users/UsersContainer";
 import HeaderContainer from "./component/Header/HeaderContainer";
+import ProfileContainer from './component/Profile/ProfileContainer';
 
 const App = () => {
     return (

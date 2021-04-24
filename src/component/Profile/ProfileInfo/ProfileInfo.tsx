@@ -13,8 +13,6 @@ const ProfileInfo = (props: ProfileInfoType) => {
         return <Preloader/>
     }
 
-
-
     return (
         <div>
             <div>
