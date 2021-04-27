@@ -8,19 +8,22 @@ import {
     setUserProfileAC,
     updateNewTextAC
 } from "../../redux/profile-reducer";
-import {RouteComponentProps, withRouter} from "react-router-dom";
+import {Redirect, RouteComponentProps, withRouter} from "react-router-dom";
 import {usersAPI} from "../../API/api";
 
 type TypeMapStateToProps = {
     posts: Array<PostType>
     newPostText: string
     profile: any
+    isAuth: boolean
 }
+
 interface IPropsType extends TypeMapStateToProps {
     addPostAC: (postText: string) => void
     updateNewTextAC: (newPost: string) => void
     setUserProfileAC: (users: string) => void
 }
+
 type PathParamsType = {
     userId: string
 }
@@ -31,6 +34,7 @@ const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
         posts: state.profilePage.posts,
         newPostText: state.profilePage.newPostText,
         profile: state.profilePage.profile,
+        isAuth: state.auth.isAuth
     }
 }
 
@@ -48,12 +52,16 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     }
 
     render() {
+
+        if (! this.props.isAuth) return <Redirect to={'/Login'}/>
+
         return <>
             <Profile addPost={this.props.addPostAC}
                      updateNewText={this.props.updateNewTextAC}
                      posts={this.props.posts}
                      newPostText={this.props.newPostText}
-                     profile={this.props.profile}/>
+                     profile={this.props.profile}
+            />
         </>
     }
 }

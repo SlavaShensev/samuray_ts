@@ -20,21 +20,20 @@ const ProfileInfo = (props: ProfileInfoType) => {
             <div>
                 {props.title.photos.large
                     ? <img src={props.title.photos.large}/>
-                    : <h5>
+                    : <h3>
                         No photo
-                    </h5>
+                    </h3>
                 }
             </div>
             <div>
                 <h2>
-                    User ID:
-                    { props.title.userId}
+                    {`User ID: - ${props.title.userId} -`}
+
                 </h2>
             </div>
             <div>
                 <h2>
-                    Need work:
-                    { props.title.lookingForAJob.toString()}
+                    {` Need work: - ${props.title.lookingForAJob.toString()} -`}
                 </h2>
             </div>
         </div>

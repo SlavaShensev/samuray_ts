@@ -11,6 +11,7 @@ class HeaderContainer extends React.Component {
             .then(res => {
                 if (res.data.resultCode === 0) {
                     const data = res.data.data
+
                     // @ts-ignore
                     this.props.setAuthUserDataAC(data)
                 }

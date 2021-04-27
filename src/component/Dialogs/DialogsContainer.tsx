@@ -13,7 +13,7 @@ type TypeMapStateToProps = {
     messages: MessageType[]
     dialogs: DialogType[]
     newMessage: string
-
+    isAuth: any
 }
 
 const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
@@ -21,12 +21,14 @@ const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
         messages: state.dialogsPage.messages,
         dialogs: state.dialogsPage.dialog,
         newMessage: state.dialogsPage.newMessage,
+        isAuth: state.auth.isAuth
     }
 };
 
-interface IDialogsContainerType extends TypeMapStateToProps  {
+interface IDialogsContainerType extends TypeMapStateToProps {
     messages: MessageType[]
     dialogs: DialogType[]
+    isAuth: boolean
     newMessage: string
     addMessageAC: () => void
     updateNewMessageAC: (text: string) => void
@@ -39,7 +41,8 @@ const DialogsContainer: React.FC<IDialogsContainerType> = props => {
         dialogs,
         addMessageAC,
         newMessage,
-        updateNewMessageAC
+        updateNewMessageAC,
+        isAuth
     } = props
 
     return <>
@@ -48,6 +51,7 @@ const DialogsContainer: React.FC<IDialogsContainerType> = props => {
                  newMessage={newMessage}
                  addMessageAC={addMessageAC}
                  updateNewMessageAC={updateNewMessageAC}
+                 isAuth={isAuth}
         />
     </>
 }

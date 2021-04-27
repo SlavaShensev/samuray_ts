@@ -34,7 +34,6 @@ const Users = (props: UserPropsType) => {
 
             {
                 props.users.map(u => <div key={u.id}>
-                    {console.log(u)}
                     <div>
                         <NavLink to={'/profile/' + u.id}>
                             <img src={u.photos.small != null ? u.photos.small : userPhoto}
