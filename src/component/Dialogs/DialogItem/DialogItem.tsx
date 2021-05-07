@@ -14,4 +14,6 @@ const DialogItem = (props: DialogType) => {
     )
 }
 
+
+
 export default DialogItem;

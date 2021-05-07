@@ -1,4 +1,5 @@
 import {usersAPI} from "../API/api";
+import {Dispatch} from "redux";
 
 export type UserType = {
     name: string,
@@ -139,7 +140,7 @@ export const followingInProgress = (followInProgress: boolean, userID?: string) 
     } as const
 } // todo--usererID ?
 
-export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispatch: any) => {
+export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispatch: Dispatch) => {
     dispatch(followingInProgress(true))
     dispatch(toggleIsFetching(true))
     usersAPI.getUsers(currentPage, pageSize).then(data => {
@@ -150,7 +151,7 @@ export const getUsersThunkCreator = (currentPage: any, pageSize: any) => (dispat
     })
 }
 
-export const followButton = (userId: any) => (dispatch: any) => { //todo type userId dispatch
+export const followButton = (userId: any) => (dispatch: Dispatch) => { //todo type userId dispatch
     dispatch(followingInProgress(true, userId))
     usersAPI.follow(userId).then(response => {
         if (response.data.resultCode === 0) {
@@ -160,7 +161,7 @@ export const followButton = (userId: any) => (dispatch: any) => { //todo type us
     })
 }
 
-export const unFollowButton = (userId: any) => (dispatch: any) => { //todo type userId dispatch
+export const unFollowButton = (userId: any) => (dispatch: Dispatch) => { //todo type userId dispatch
    dispatch(followingInProgress(true, userId))
     usersAPI.unFollow(userId).then(response => {
         if (response.data.resultCode === 0) {

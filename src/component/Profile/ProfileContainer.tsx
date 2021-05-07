@@ -29,6 +29,8 @@ type PathParamsType = {
 }
 type CommonProfileContainerPropsType = RouteComponentProps<PathParamsType> & IPropsType
 
+
+
 const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     return {
         posts: state.profilePage.posts,
@@ -53,8 +55,6 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
 
     render() {
 
-        if (! this.props.isAuth) return <Redirect to={'/Login'}/>
-
         return <>
             <Profile addPost={this.props.addPostAC}
                      updateNewText={this.props.updateNewTextAC}
@@ -66,7 +66,15 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     }
 }
 
-const WithUrlDataContainerComponent = withRouter(ProfileContainer)
+const AuthRedirectComponent = (props: any)=> {
+
+    if (!props.isAuth)
+        return <Redirect to={'/Login'}/>
+
+    return <ProfileContainer {...props}  />
+}
+
+const WithUrlDataContainerComponent = withRouter(AuthRedirectComponent)
 const connector = connect(mapStateToProps, {
     addPostAC,
     updateNewTextAC,

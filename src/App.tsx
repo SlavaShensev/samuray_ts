@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {NavLink, Route} from 'react-router-dom';
 import Navbar from "./component/Navbar/Navbar";
 import Music from "./component/Music/Music";
 import News from "./component/News/News";
