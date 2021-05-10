@@ -4,10 +4,8 @@
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,14 +224,7 @@
       <workItem from="1620372831148" duration="567000" />
       <workItem from="1620410879445" duration="13156000" />
       <workItem from="1620582330271" duration="2711000" />
-      <workItem from="1620587479672" duration="7732000" />
-    </task>
-    <task id="LOCAL-00016" summary="type_store">
-      <created>1613225660229</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1613225660229</updated>
+      <workItem from="1620587479672" duration="12183000" />
     </task>
     <task id="LOCAL-00017" summary="bind_addPost_updateNewPostText">
       <created>1613230340099</created>
@@ -571,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620419781108</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="add_HOC_Redirect">
+      <created>1620646044576</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1620646044578</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_UsersAIPComponent" />
     <MESSAGE value="add_preloader" />
     <MESSAGE value="add_preloader_done" />
     <MESSAGE value="add_preloader_in_component" />
@@ -616,6 +613,7 @@
     <MESSAGE value="ref_Users" />
     <MESSAGE value="add_login_messages_profile" />
     <MESSAGE value="add_thonks" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_thonks" />
+    <MESSAGE value="add_HOC_Redirect" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_HOC_Redirect" />
   </component>
 </project>
