@@ -2,6 +2,7 @@ import React from 'react';
 import bg from "../../../static/bg.png";
 import s from "../Profile.module.css";
 import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 type ProfileInfoType = {
     title: any
@@ -17,6 +18,7 @@ const ProfileInfo = (props: ProfileInfoType) => {
             <div>
                 <img src={bg} className={s.bg}/>
             </div>
+            <ProfileStatus status={'Hello'} />
             <div>
                 {props.title.photos.large
                     ? <img src={props.title.photos.large}/>
@@ -25,6 +27,7 @@ const ProfileInfo = (props: ProfileInfoType) => {
                     </h3>
                 }
             </div>
+
             <div>
                 <h2>
                     {`User ID: - ${props.title.userId} -`}

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileStatus.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -225,14 +225,7 @@
       <workItem from="1620410879445" duration="13156000" />
       <workItem from="1620582330271" duration="2711000" />
       <workItem from="1620587479672" duration="16111000" />
-      <workItem from="1620659042860" duration="1259000" />
-    </task>
-    <task id="LOCAL-00019" summary="add_dispatch_and_type_refactoring_Profile">
-      <created>1613301152251</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1613301152251</updated>
+      <workItem from="1620659042860" duration="9676000" />
     </task>
     <task id="LOCAL-00020" summary="add_dispatch_done_and_start_create_dispatchCreator">
       <created>1613304649011</created>
@@ -570,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620658616044</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add_TYPING_compose_ProfileContainer_DialogsContainer">
+      <created>1620660355324</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1620660355324</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +590,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_preloader_in_component" />
     <MESSAGE value="delete_mapStateToProps" />
     <MESSAGE value="add_ProfileComponents" />
     <MESSAGE value="add_User_from_server_&amp;_preloader_in_profile" />
@@ -615,6 +614,7 @@
     <MESSAGE value="add_HOC_Redirect" />
     <MESSAGE value="typing_HOC_withAuthRedirect" />
     <MESSAGE value="add_compose_ProfileContainer_DialogsContainer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_compose_ProfileContainer_DialogsContainer" />
+    <MESSAGE value="add_TYPING_compose_ProfileContainer_DialogsContainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_TYPING_compose_ProfileContainer_DialogsContainer" />
   </component>
 </project>
