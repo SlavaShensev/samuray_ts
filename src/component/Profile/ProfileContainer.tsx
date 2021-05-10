@@ -64,7 +64,7 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     }
 }
 
-export default compose(
+export default compose<React.ComponentType>(
     connect(mapStateToProps, {
         addPostAC,
         updateNewTextAC,

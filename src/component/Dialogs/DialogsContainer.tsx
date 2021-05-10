@@ -54,8 +54,8 @@ const DialogsContainer: React.FC<IDialogsContainerType> = props => {
         />
     </>
 }
-//AuthRedirectComponent
-export default compose(
+
+export default compose<React.ComponentType>(
     connect(mapStateToProps, {
         addMessageAC,
         updateNewMessageAC
