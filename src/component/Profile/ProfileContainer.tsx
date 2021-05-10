@@ -29,8 +29,6 @@ type PathParamsType = {
 }
 type CommonProfileContainerPropsType = RouteComponentProps<PathParamsType> & IPropsType
 
-
-
 const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     return {
         posts: state.profilePage.posts,

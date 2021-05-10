@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="add_login_messages_profile">
-      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" afterDir="false" />
+    <list default="true" id="35da4604-7178-47d1-bf4a-1fcd42022491" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogItem/DialogItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogItem/DialogItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Dialogs/DialogsContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header/HeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header/HeaderContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Profile/ProfileContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,14 +224,9 @@
       <workItem from="1620235603928" duration="615000" />
       <workItem from="1620236419261" duration="93000" />
       <workItem from="1620372831148" duration="567000" />
-      <workItem from="1620410879445" duration="4781000" />
-    </task>
-    <task id="LOCAL-00015" summary="add_my_store_whitout_type">
-      <created>1613224291302</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1613224291302</updated>
+      <workItem from="1620410879445" duration="13156000" />
+      <workItem from="1620582330271" duration="2711000" />
+      <workItem from="1620587479672" duration="7732000" />
     </task>
     <task id="LOCAL-00016" summary="type_store">
       <created>1613225660229</created>
@@ -573,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619538262632</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="add_thonks">
+      <created>1620419781107</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1620419781108</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +591,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add_pagination_request_on_server" />
     <MESSAGE value="add_UsersAIPComponent" />
     <MESSAGE value="add_preloader" />
     <MESSAGE value="add_preloader_done" />
@@ -618,6 +615,7 @@
     <MESSAGE value="ref_ProfileInfo" />
     <MESSAGE value="ref_Users" />
     <MESSAGE value="add_login_messages_profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_login_messages_profile" />
+    <MESSAGE value="add_thonks" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_thonks" />
   </component>
 </project>

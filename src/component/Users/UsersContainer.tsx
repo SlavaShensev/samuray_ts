@@ -11,7 +11,6 @@ import {connect} from "react-redux";
 import React from "react";
 import Users from "./Users";
 import Preloader from "../common/Preloader/Preloader";
-
 export type MapStateToPropsType = {
     users: Array<UserType>
     pageSize: number
@@ -20,7 +19,6 @@ export type MapStateToPropsType = {
     isFetching: boolean
     followingInProgressState: []
 }
-
 export type TypeMapDispatchToProps = {
     followingInProgress: (isFetching: boolean, id?: any) => void // need to fix todo
     getUsersThunkCreator: any// todo
@@ -29,6 +27,17 @@ export type TypeMapDispatchToProps = {
 }
 export type UsersContainerPropsType = MapStateToPropsType & TypeMapDispatchToProps
 type UsersContainerStateType = {}
+
+const mapStateToProps = (state: AppStateType): MapStateToPropsType => {
+    return {
+        users: state.usersPage.users,
+        pageSize: state.usersPage.pageSize,
+        totalUserCount: state.usersPage.totalUsersCount,
+        currentPage: state.usersPage.currentPage,
+        isFetching: state.usersPage.isFetching,
+        followingInProgressState: state.usersPage.followingInProgress
+    }
+};
 
 class UsersContainer extends React.Component<UsersContainerPropsType, UsersContainerStateType> {
     componentDidMount() {
@@ -59,16 +68,6 @@ class UsersContainer extends React.Component<UsersContainerPropsType, UsersConta
     }
 }
 
-const mapStateToProps = (state: AppStateType): MapStateToPropsType => {
-    return {
-        users: state.usersPage.users,
-        pageSize: state.usersPage.pageSize,
-        totalUserCount: state.usersPage.totalUsersCount,
-        currentPage: state.usersPage.currentPage,
-        isFetching: state.usersPage.isFetching,
-        followingInProgressState: state.usersPage.followingInProgress
-    }
-};
 export default connect(mapStateToProps, {
     setCurrentPage,
     followingInProgress,
