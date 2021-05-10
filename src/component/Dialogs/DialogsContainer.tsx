@@ -8,21 +8,24 @@ import {
     updateNewMessageAC
 } from "../../redux/dialogs-reducer";
 import React from "react";
-import {Redirect} from "react-router";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
+
 type TypeMapStateToProps = {
     messages: MessageType[]
     dialogs: DialogType[]
     newMessage: string
-    isAuth: any
+
 }
 const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
     return {
         messages: state.dialogsPage.messages,
         dialogs: state.dialogsPage.dialog,
         newMessage: state.dialogsPage.newMessage,
-        isAuth: state.auth.isAuth
+
     }
 };
+
 interface IDialogsContainerType extends TypeMapStateToProps {
     messages: MessageType[]
     dialogs: DialogType[]
@@ -31,14 +34,14 @@ interface IDialogsContainerType extends TypeMapStateToProps {
     addMessageAC: () => void
     updateNewMessageAC: (text: string) => void
 }
+
 const DialogsContainer: React.FC<IDialogsContainerType> = props => {
     const {
         messages,
         dialogs,
         addMessageAC,
         newMessage,
-        updateNewMessageAC,
-        isAuth
+        updateNewMessageAC
     } = props
 
     return <>
@@ -47,19 +50,15 @@ const DialogsContainer: React.FC<IDialogsContainerType> = props => {
                  newMessage={newMessage}
                  addMessageAC={addMessageAC}
                  updateNewMessageAC={updateNewMessageAC}
-                 isAuth={isAuth}
+
         />
     </>
 }
-const AuthRedirectComponent = (props: any)=> {
-
-    if (!props.isAuth)
-        return <Redirect to={'/Login'}/>
-
-    return <DialogsContainer {...props}  />
-}
-const connector = connect(mapStateToProps, {
-    addMessageAC,
-    updateNewMessageAC
-})
-export default connector(AuthRedirectComponent)
+//AuthRedirectComponent
+export default compose(
+    connect(mapStateToProps, {
+        addMessageAC,
+        updateNewMessageAC
+    }),
+    withAuthRedirect,
+)(DialogsContainer)

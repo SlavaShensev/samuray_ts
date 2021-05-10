@@ -8,15 +8,15 @@ import {
     setUserProfileAC,
     updateNewTextAC
 } from "../../redux/profile-reducer";
-import {Redirect, RouteComponentProps, withRouter} from "react-router-dom";
+import {RouteComponentProps, withRouter} from "react-router-dom";
 import {usersAPI} from "../../API/api";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 type TypeMapStateToProps = {
     posts: Array<PostType>
     newPostText: string
     profile: any
-    isAuth: boolean
 }
 
 interface IPropsType extends TypeMapStateToProps {
@@ -35,7 +35,6 @@ const mapStateToProps = (state: AppStateType): TypeMapStateToProps => {
         posts: state.profilePage.posts,
         newPostText: state.profilePage.newPostText,
         profile: state.profilePage.profile,
-        isAuth: state.auth.isAuth
     }
 }
 
@@ -65,19 +64,12 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     }
 }
 
-const AuthRedirectComponent = (props: any) => {
-
-    if (!props.isAuth)
-        return <Redirect to={'/Login'}/>
-
-    return <ProfileContainer {...props}  />
-}
-
-const WithUrlDataContainerComponent = withRouter(AuthRedirectComponent)
-const connector = connect(mapStateToProps, {
-    addPostAC,
-    updateNewTextAC,
-    setUserProfileAC
-})
-
-export default withAuthRedirect(connector(WithUrlDataContainerComponent))
+export default compose(
+    connect(mapStateToProps, {
+        addPostAC,
+        updateNewTextAC,
+        setUserProfileAC
+    }),
+    withRouter,
+    withAuthRedirect,
+)(ProfileContainer)
