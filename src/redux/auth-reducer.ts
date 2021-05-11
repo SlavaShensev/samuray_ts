@@ -1,10 +1,12 @@
 import {authAPI, usersAPI} from "../API/api";
 import {Dispatch} from "redux";
+import {setUserProfileAC, TypeSetUserProfileAC} from "./profile-reducer";
+
 const SET_USER_DATA = 'SET_USER_DATA'
 type InitialStateType = {
-    userID: any
-    email: any
-    login: any
+    userID: string | null
+    email: string | null
+    login: string | null
     isAuth: boolean
 }
 const initialState: InitialStateType = {
@@ -35,13 +37,8 @@ export const setAuthUserDataAC = (data: any) => {
         data
     } as const
 }
-export const getUserProfile = (userId: any) => (dispatch: any) => {
-    usersAPI.getProfile(userId)
-        .then(response => {
-            dispatch(setAuthUserDataAC(response.data))
-        })
-}
-export const getAuthUserData = () => (dispatch: Dispatch) => {
+
+export const getAuthUserData = () => (dispatch: Dispatch<TypeAddPost>) => {
     authAPI.me()
         .then(response => {
             if (response.data.resultCode === 0) {

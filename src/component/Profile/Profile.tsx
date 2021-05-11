@@ -8,12 +8,17 @@ type ProfilePropsType = {
     posts: any
     newPostText: string
     profile: any
+    status: string
+    updateStatus: any
 }
 
 const Profile = (props: ProfilePropsType) => {
     return (
         <div>
-            <ProfileInfo title={props.profile}/>
+            <ProfileInfo title={props.profile}
+                         status={props.status}
+                         updateStatus={props.updateStatus}
+            />
             <MyPosts posts={props.posts}
                      newPostText={props.newPostText}
                      addPost={props.addPost}
