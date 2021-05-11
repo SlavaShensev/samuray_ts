@@ -42,7 +42,7 @@ class ProfileContainer extends React.Component <CommonProfileContainerPropsType>
     componentDidMount() {
         let userId = this.props.match.params.userId
         if (!userId) {
-            userId = '1'
+            userId = '2'
         }
 
         usersAPI.getProfile(userId)
